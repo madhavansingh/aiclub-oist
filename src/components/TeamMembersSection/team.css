@@ -1,0 +1,314 @@
+@font-face {
+  font-family: dirtyline;
+  src: url('../../fonts/dirtyline-36daysoftype-2022.otf');
+}
+
+/* @font-face {
+  font-family: dirtyline;
+  src: url('../../fonts/dirtyline-36daysoftype-2022.otf');
+} */
+
+#branding {
+  /* background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
+  background-size: 20px 20px;  */
+  overflow: hidden;
+  width: 100vw;
+  height: auto;
+  font-family: 'inter';
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 35px;
+}
+
+#brand_col {
+  display: flex;
+  width: 65vw;
+  margin: auto;
+  margin-top: 75px;
+  gap: 25px;
+}
+
+#brand_col ul {
+  margin: 0;
+  padding: 0;
+  width: 33%;
+  transform-origin: bottom left;
+}
+
+#brand_col li {
+  width: 100%;
+  border: 3px solid #3b3b3b;
+  margin-bottom: 25px;
+  aspect-ratio: 0.9 / 1;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+#brand_col li>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  /* padding: 10px 0; */
+}
+
+#brand_col li picture {
+  display: block;
+  width: 65%;
+  height: 65%;
+  border-radius: inherit;
+  overflow: hidden;
+  margin: 1.3vw;
+}
+
+#brand_col li picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+#brand_col li>div span,
+#brand_col li>div h3 {
+  font-size: 1.5vw;
+  color: #ffffff;
+
+  width: 100%;
+  text-align: center;
+  padding: 0.5vw;
+  border-radius: 10px;
+}
+
+#brand_col li>div h3 {
+  margin: 0;
+  align-self: center;
+  position: absolute;
+  top: 0.5em;
+}
+
+#brand_col li>div span {
+  margin-top: auto;
+  align-self: center;
+  position: absolute;
+  bottom: 0.5em;
+}
+
+#brand_col .right,
+#brand_col .right li {
+  transform-origin: bottom right;
+}
+
+#branding .startSection h2 {
+  width: 100% !important;
+  color: var(--white);
+}
+
+#branding .startSection picture img {
+  width: 100%;
+}
+
+.meetteam {
+  font-family: dirtyline;
+  text-transform: lowercase;
+  letter-spacing: 4px;
+  font-size: 8vw;
+  font-weight: bold;
+  margin: 1.2vw 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vw;
+}
+
+.faculty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 4%;
+  width: 70%;
+}
+
+.faculty1,
+.faculty2 {
+  background-color: greenyellow;
+  border-radius: 5%;
+  width: 25vw;
+  height: 30vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* opacity: 0;` */
+}
+
+.faculty1:hover,
+.faculty2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.faculty1 img,
+.faculty2 img {
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  padding-top: 0%;
+  border-radius: inherit;
+  transition: transform 0.3s ease;
+}
+
+.faculty1 img:hover,
+.faculty2 img:hover {
+  transform: scale(1.1);
+}
+
+.designation {
+  position: absolute;
+  font-size: 1.5vw;
+  bottom: 1vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1vw 1.5vw;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.facultytext {
+  flex: 1;
+  padding: 0 20px;
+  color: white;
+  font-size: 1.8vw;
+}
+
+
+/*
+.##.....##.########.########..####....###.......########.....###....########..########
+.###...###.##.......##.....##..##....##.##......##.....##...##.##...##.....##....##...
+.####.####.##.......##.....##..##...##...##.....##.....##..##...##..##.....##....##...
+.##.###.##.######...##.....##..##..##.....##....########..##.....##.########.....##...
+.##.....##.##.......##.....##..##..#########....##........#########.##...##......##...
+.##.....##.##.......##.....##..##..##.....##....##........##.....##.##....##.....##...
+.##.....##.########.########..####.##.....##....##........##.....##.##.....##....##...
+*/
+
+@media (max-width: 768px) {
+  #brand_col {
+    width: 95vw;
+    margin-top: 1em;
+    gap: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #brand_col ul {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #brand_col li {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    aspect-ratio: 0.8 / 1;
+    height: auto;
+  }
+
+  #brand_col li>div span,
+  #brand_col li>div h3 {
+    font-size: 2.2vw;
+    padding: 0.5vw;
+  }
+
+  #brand_col li picture {
+    display: block;
+    width: 75%;
+    height: 75%;
+    border-radius: inherit;
+    overflow: hidden;
+    margin: 1.3vw auto;
+  }
+
+  #brand_col li picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: auto;
+  }
+
+
+
+
+  .meetteam {
+    font-size: 7vw;
+    margin: 3vw;
+  }
+
+  .faculty {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+
+  .faculty1 {
+    width: 40vw;
+    height: 60vw;
+    margin-bottom: 2vw;
+    margin-left: 3.5vw;
+    border-radius: 20px;
+    order: 1;
+
+  }
+
+  .faculty2 {
+    width: 40vw;
+    height: 60vw;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+    order: 2;
+    margin-right: 3vw
+  }
+
+
+
+  .designation {
+    position: absolute;
+    font-size: 3vw;
+    bottom: 1vw;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1vw 1.5vw;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .facultytext {
+    font-size: 6vw;
+    padding: 4.5vw;
+    /* margin: 4vw; */
+    order: 3;
+  }
+}

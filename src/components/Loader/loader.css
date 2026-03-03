@@ -1,0 +1,29 @@
+#loader {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#loader h1 {
+  font-family: inter;
+  /* background: linear-gradient(to left, #35410fd7, #97a173, #D4FF4A, #35410fd7);  */
+  background: linear-gradient(to left,#333333d7, #b2b2b2, #ffffff, #ffffff, #ffffff, #b2b2b2, #333333d7); 
+  font-size: 4vw;
+  color: transparent;
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  #loader h1 {
+    font-size: 9vw;
+  }
+}

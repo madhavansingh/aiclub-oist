@@ -1,0 +1,359 @@
+/* .pin-spacer{ 
+  background-image: radial-gradient(circle, #383c3d7d 2px, transparent 1px);
+  background-size: 20px 20px; 
+} */
+
+.eventSection {
+  /* background-color:#131315; */
+  /* background-color: white; */
+  /* background-image: radial-gradient(circle, #383c3d32 2px, transparent 1px);
+  background-size: 20px 20px;  */
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+
+  display: flex;
+  position: relative;
+  gap: 44px;
+  width: 800px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(1500px) rotateY(-15deg) rotateZ(-6deg) translateX(-25px) translateY(-100px);
+}
+
+.cardbox {
+  width: 100%;
+  height: 100%;
+  /* background-color: #BAF400; */
+}
+
+.slider span {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  width: 170%;
+  height: 120%;
+  pointer-events: auto;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(1750px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.slider span img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider span .cardbox {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+  z-index: 1;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.octa {
+  width: 200px;
+  aspect-ratio: 1;
+  --o: calc(50% * tan(-20.5deg));
+  --p: calc(50% * tan(-42.5deg));
+  clip-path: polygon(var(--o) 50%,
+      50% var(--p),
+      calc(100% - var(--o)) 50%,
+      50% calc(100% - var(--p)));
+}
+
+#bannerImage {
+  transform: scaleX(-1);
+  min-width: 100%;
+  object-fit: cover;
+}
+
+
+.eventTitle {
+  position: absolute;
+  top: 30px;
+  left: 130px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inter;
+}
+
+.eventKeyWords {
+  position: initial;
+  height: 15%;
+  top: 101%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: scaleX(-1);
+  width: 90%;
+}
+
+.word {
+  /* border: 2px solid rgb(0, 0, 0); */
+  font-weight: 600;
+  font-size: 30px;
+  font-family: inter;
+  background: #baf400;
+  padding: 15px;
+  border-radius: 15px;
+  width: 20%;
+  text-align: center;
+}
+
+.eventDetails {
+  width: 75%;
+  height: 15%;
+  display: flex;
+  transform: scaleX(-1);
+  justify-content: space-around;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.eventName {
+
+  font-size: 50px;
+  font-family: inter;
+  letter-spacing: 3px;
+}
+
+.viewEvent {
+  width: 30%;
+}
+
+.viewEvent button {
+  font-family: inter;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  padding: 15px;
+  width: 100%;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+
+/* @media screen and (max-width: 768px) {
+  .eventSection {
+    flex-direction: column;
+    transform: scaleX(-1);
+    height: auto;
+  }
+
+  .slider {
+    flex-direction: column;
+    transform: none;
+    width: 90vw;
+    margin: 0 0 0 12px;
+  }
+
+  .slider span {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .octa {
+    width: 100%;
+    aspect-ratio: 1;
+    clip-path: none;
+  }
+
+  #bannerImage {
+    border-radius: 50px 20px 50px 20px;
+  }
+
+  .eventTitlex {
+    position: initial;
+    transform: scaleX(-1);
+    font-size: 15px;
+    right: auto;
+    margin: 50px 20px 15px auto;
+    font-weight: 500;
+  }
+
+  .eventKeyWords {
+    top: 0;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .word {
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .cardbox {
+    width: 100%;
+  }
+
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eventName {
+    font-size: 21px;
+    width: 100%;
+    margin: -10px 0 20px -40px;
+    padding: 0;
+  }
+
+  .viewEvent {
+    width: 50%;
+    margin-left: -40px;
+    padding: 0;
+  }
+
+  .viewEvent button {
+    font-size: 15px;
+    padding: 7px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .eventSection {
+    flex-direction: column;
+    transform: scaleX(-1);
+    height: auto;
+    justify-content: center;
+    /* Centering the content vertically */
+    align-items: center;
+    /* Centering the content horizontally */
+  }
+
+  .slider {
+    flex-direction: column;
+    transform: none;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    /* Centering content */
+    align-items: center;
+    /* Centering content */
+  }
+
+  .slider span {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .octa {
+    width: 100%;
+    aspect-ratio: 1;
+    clip-path: none;
+  }
+
+  #bannerImage {
+    border-radius: 50px 20px 50px 20px;
+  }
+
+  .eventTitle {
+    position: initial;
+    transform: scaleX(-1);
+    font-size: 20px;
+    right: auto;
+    margin: 50px 20px 15px auto;
+    font-weight: 700;
+    font-family: inter;
+  }
+
+  .eventKeyWords {
+    top: 0;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .word {
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardbox {
+    width: 100%;
+  }
+
+  .eventDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the event details */
+    justify-content: center;
+    /* Vertically center */
+    text-align: center;
+  }
+
+  .eventName {
+    font-size: 21px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+    /* Centering text */
+  }
+
+  .viewEvent {
+    width: 80%;
+    /* Increase width for button */
+    margin-left: 0;
+    /* Adjust to center the button */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Center the button */
+  }
+
+  .viewEvent button {
+    font-size: 15px;
+    padding: 10px 20px;
+    /* Adjust padding for a larger button */
+    width: 100%;
+    /* Make it take up the full width of its container */
+    text-align: center;
+    /* Ensure button text is centered */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflowing text */
+    text-overflow: ellipsis;
+    /* Add ellipsis if the text is too long */
+  }
+}

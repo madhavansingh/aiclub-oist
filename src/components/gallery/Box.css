@@ -1,0 +1,31 @@
+.box {
+  background-color: #312f2fb9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  font-size: 24px;
+  font-weight: 300;
+  border-radius: 25px;
+  font-family: inter;
+  transition: background-color 0.3s ease;
+  background-repeat: round;
+  background-blend-mode: multiply;
+  position: relative;
+}
+
+
+.box:hover {
+  background-color: #6eff5e;
+}
+
+/* .box:nth-child(6) {
+  background-color: #3b3b4f;
+} */
+
+@media (max-width: 768px) {
+  .box {
+    height: 35vh; 
+  }
+}

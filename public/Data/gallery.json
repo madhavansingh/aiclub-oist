@@ -1,0 +1,32 @@
+[
+  {
+    "id": "galleryBox1",
+    "src": "/gallerysection/IMG_6499.webp",
+    "alt": "Gallery Image 1"
+  },
+  {
+    "id": "galleryBox2",
+    "src": "/gallerysection/IMG_6502.webp",
+    "alt": "Gallery Image 2"
+  },
+  {
+    "id": "galleryBox3",
+    "src": "/gallerysection/IMG_6500.webp",
+    "alt": "Gallery Image 3"
+  },
+  {
+    "id": "galleryBox4",
+    "src": "/gallerysection/IMG_6504.webp",
+    "alt": "Gallery Image 4"
+  },
+  {
+    "id": "galleryBox5",
+    "src": "/gallerysection/IMG_6501.webp",
+    "alt": "Gallery Image 5"
+  },
+  {
+    "id": "galleryCenterBox",
+    "src": "/gallerysection/IMG_6503.webp",
+    "alt": "Center Gallery Image"
+  }
+]

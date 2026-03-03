@@ -1,0 +1,1 @@
+:root{--scaleYColumnsReveal:0;--transformOrigin:"top"}.anim-reveal-columns rect{transform:scaleY(var(--scaleYColumnsReveal));transform-origin:var(--transformOrigin);will-change:auto}

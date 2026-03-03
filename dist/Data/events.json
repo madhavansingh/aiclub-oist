@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "TEDx 2024",
+        "img": "/eventBanners/genesis.webp",
+        "description": "TEDx 2024 was a flagship idea-sharing event that brought together visionary speakers, innovators, and thought leaders to inspire and spark meaningful conversations. The event focused on powerful stories, transformative ideas, and perspectives that challenged conventional thinking while encouraging students to explore creativity, leadership, and impact."
+    },
+    {
+        "id": 2,
+        "name": "Cypher 30 3.0",
+        "img": "/eventBanners/chai.webp",
+        "description": "Cypher 30 3.0 was an advanced coding challenge designed to test participants’ problem-solving skills, logical thinking, and speed under pressure. The competition featured multiple rounds of algorithmic and real-world programming problems, pushing coders to innovate, collaborate, and compete at a high level."
+    },
+    {
+        "id": 3,
+        "name": "Web Wizards",
+        "img": "/eventBanners/aicrypt.webp",
+        "description": "Web Wizards was a one-day intensive web development challenge where participants designed and built functional websites within a limited timeframe. The event tested creativity, UI/UX design sense, responsiveness, and technical implementation skills using modern web technologies."
+    },
+    {
+        "id": 4,
+        "name": "Canva Workshop",
+        "img": "/eventBanners/hackExchange2.webp",
+        "description": "The Canva Workshop was a hands-on design session focused on empowering students with practical graphic design skills. Participants learned branding fundamentals, social media content creation, poster design techniques, and how to create visually engaging designs using Canva."
+    },
+    {
+        "id": 5,
+        "name": "CineLife",
+        "img": "/eventBanners/aiconic.webp",
+        "description": "CineLife was a creative cultural event celebrating storytelling through cinema and visual media. The event encouraged participants to explore filmmaking, cinematography, and creative expression while engaging audiences through impactful visual narratives."
+    },
+    {
+        "id": 6,
+        "name": "Edge AI 3rd Edition",
+        "img": "/eventBanners/aiconic2.webp",
+        "description": "3rd Edition of our Magzine Edge AI"
+    },
+    {
+        "id": 7,
+        "name": "Hackthrive",
+        "img": "/eventBanners/aiBreakdown.webp",
+        "description": "Join us for an online expert session with winners and finalists of national hackathons as they share their journeys, strategies, and tips to excel in top tech competitions."
+    },
+    {
+        "id": 8,
+        "name": "TEDx 2023",
+        "img": "/eventBanners/aiconclave3.webp",
+        "description": "TEDx 2023 was an inspiring conference featuring influential speakers who shared transformative ideas across technology, entrepreneurship, creativity, and social impact. The event provided a platform for deep discussions, fresh perspectives, and meaningful intellectual exchange."
+    }
+]

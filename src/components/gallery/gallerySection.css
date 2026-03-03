@@ -1,0 +1,215 @@
+.galleryWrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.galleryRow1,
+.galleryRow2,
+.galleryRow3 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.galleryRow2 {
+    height: 35%;
+}
+
+.galleryRow1>.boximg1 {
+    width: 40%;
+    max-width: 400px;
+    height: 95%;
+    background-color: #baf400;
+    position: relative;
+    left: 0%;
+}
+
+.ghostboximg1{
+    max-width: 232px;
+    width: 20%;
+    height: 95%
+}
+
+.ghostboximg2{
+    max-width: 174px;
+    width: 15%;
+    height: 95%
+}
+
+.galleryRow2>.boximg1 {
+    width: 20%;
+    height: 115%;
+    max-width: 230px;
+    background-color: #baf400;
+    position: relative;
+    top: -10%;
+}
+
+.galleryRow2>.boximg2 {
+    width: 30%;
+    max-width: 346px;
+    height: 95%;
+    background-color: #baf400;
+}
+
+.galleryRow2>.boximg3 {
+    max-width: 230px;
+    width: 20%;
+    height: 95%;
+    background-color: #baf400;
+}
+
+.galleryRow3>.boximg1 {
+    width: 20%;
+    max-width: 230px;
+    height: 95%;
+    background-color: #baf400;
+}
+
+.galleryRow3>.boximg2 {
+    width: 40%;
+    max-width: 460px;
+    height: 95%;
+    background-color: #baf400;
+}
+
+#galleryBox1{
+    transform: translateX(-100px);
+    opacity: 0;
+    cursor: pointer;
+}
+#galleryBox2{
+    transform: translateY(100px);
+    opacity: 0;
+    cursor: pointer;
+}
+#galleryBox3{
+    transform: translateY(-100px);
+    opacity: 0;
+    cursor: pointer;
+}
+#galleryBox4,#galleryBox5{
+    transform: translateX(100px);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.boximg2{
+    cursor: pointer;
+}
+
+.galleryTitle{
+    position: relative;
+    top: 0px;
+    left: 130px;
+    margin-right: auto;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .galleryTitle{
+        /* position: absolute; */
+        left: -100px;
+        margin-bottom: 10px;
+        color: white;
+        transform: scaleX(1);
+    }
+    #galleryBox1{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    #galleryBox2{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    #galleryBox3{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    #galleryBox4,#galleryBox5{
+        transform: translateX(100px);
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    .galleryRow1,
+    .galleryRow2,
+    .galleryRow3 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 3%;
+    }
+
+    .galleryRow1>.boximg1 {
+        left: 0;
+        width: 35%;
+        max-width: none;
+        height: 96%;
+    }
+
+    .galleryRow1>.boximg2 {
+        width: 45%;
+        height: 71%;
+        background-color: #baf400;
+        position: relative;
+        bottom: -12%;
+        max-width: none;
+        /* height: %; */
+
+    }
+    .galleryRow2>.boximg1 {
+        width: 85%;
+        height: 90%;
+        background-color: #baf400;
+        top: 0;
+        max-width: none;
+        height: 96%;
+    }
+    
+    .galleryRow2>.boximg2 {
+        display: none;
+    }
+    
+    .galleryRow2>.boximg3 {
+        display: none;
+    }
+    .galleryRowbox{
+        width: 50%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 96%;
+    }
+    .galleryRow3>.galleryRowbox>.subBoximg1 {
+        width: 100%;
+        height: 46%;
+        background-color: #baf400;
+    }
+    .galleryRow3>.galleryRowbox>.subBoximg2 {
+        width: 80%;
+        height: 50%;
+        background-color: #baf400;
+    }
+    
+    .galleryRow3>.boximg2 {
+        width: 30%;
+        height: 90%;
+        background-color: #baf400;
+        max-width: none;
+        height: 96%;
+    }
+}

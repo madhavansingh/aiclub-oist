@@ -1,0 +1,78 @@
+.scroller {
+  /* min-width: 120px; */
+  max-width: 120px;
+  height: 120px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  content-visibility: auto;
+  z-index: 1000000;
+  background: #f1f1f1;
+}
+.ring {
+  width: 120px;
+  height: 120px;
+}
+.ring > img {
+  width: 120px;
+}
+.arrow {
+  position: absolute;
+  bottom: 39%;
+  left: 45%;
+}
+
+.arrowsvg {
+  width: 15px;
+}
+
+.scrollerbox {
+  position: absolute;
+  top: 18%;
+  left: 19%;
+  z-index: -1;
+  width: 75px;
+  height: 75px;
+  content-visibility: auto;
+  border-radius: 50%;
+}
+
+.scrollerbox1 {
+  width: 100px;
+  height: 75px;
+  background: #baf400;
+  /* transform: translateY(-100%); */
+}
+.scrollerbox2 {
+  width: 100px;
+  height: 76px;
+  background: black;
+  transform: translateY(-100%);
+}
+.blend {
+  mix-blend-mode: difference;
+}
+
+@media (max-width : 768px){
+  .scroller{
+    height: 90px;
+    width: 90px;
+  }
+  .scrollerbox{
+    height: 57px;
+    width: 57px;
+  }
+  .ring {
+    width: 90px;
+    height: 90px;
+  }
+  .ring > img {
+    width: 90px;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 37%;
+    left: 42%;
+  }
+}

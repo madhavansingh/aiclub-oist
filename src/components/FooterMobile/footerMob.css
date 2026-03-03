@@ -1,0 +1,122 @@
+@font-face {
+  font-family: dirtyline;
+  src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
+}
+
+@font-face {
+  font-family: maison;
+  src: url("../../fonts/fonnts.com-Maison_Neue_Book.ttf");
+}
+
+.mob_Mainfooter {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+  gap: 10px;
+  z-index: 100000000000000000000;
+  background-color: #131315;
+}
+
+.mob_footCont1 {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #baf400;
+  gap: 10px;
+  border-radius: 550px;
+  content-visibility: auto;
+}
+
+.mob_dotLayer {
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.mob_quoteLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.mob_footCont1>h1 {
+  padding-top: 25px;
+  font-family: dirtyline;
+  text-transform: lowercase;
+  letter-spacing: 0px;
+  font-size: 30vw;
+  font-weight: bold;
+  color: white;
+  word-spacing: -20px;
+}
+
+.mob_Mainfooter>img {
+  width: 30px;
+  position: absolute;
+  right: 35px;
+  cursor: pointer;
+  top: -30px;
+}
+
+
+.mob_topArrowtxt {
+  font-family: maison;
+  position: absolute;
+  right: 32px;
+  padding-top: 90px;
+  font-size: small;
+  cursor: pointer;
+  top: -25px;
+  color: white;
+  display: none;
+}
+
+.mob_footCont2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #131315;
+  color: white;
+  font-family: maison;
+  z-index: 100000000000000000;
+  gap: 5px;
+}
+
+.mob_footCont2>.mob_foot2cont2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.mob_footCont2>.mob_foot2cont2>a {
+  color: #baf400;
+  text-decoration: none;
+}
+
+.mob_foot2cont1,
+.mob_foot2cont2,
+.mob_foot2cont3 {
+  font-size: small;
+  letter-spacing: 1px;
+}

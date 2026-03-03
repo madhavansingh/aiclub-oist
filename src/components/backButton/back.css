@@ -1,0 +1,14 @@
+.backButtonWrap {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+    font-family: inter;
+    font-size: large;
+    z-index: 1000000;
+    cursor: pointer;
+}

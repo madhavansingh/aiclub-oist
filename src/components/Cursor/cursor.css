@@ -1,0 +1,15 @@
+.cursor{
+    width: 20px;
+    height: 20px;
+    background-color: #baf400;
+    position: fixed;
+    border-radius: 50px;
+    z-index: 100000000000000000000000000000;
+    pointer-events: none;
+    /* mix-blend-mode: difference; */
+    border-top-left-radius: 0px;
+    font-family: neue;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    /* transition: width 400ms cubic-bezier(0.68, 0.01, 0.32, 1.34); */
+}

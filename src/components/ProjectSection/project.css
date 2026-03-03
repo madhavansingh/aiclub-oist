@@ -1,0 +1,292 @@
+@font-face {
+  font-family: dirtyline;
+  src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
+}
+
+@font-face {
+  font-family: maison;
+  src: url("../../fonts/fonnts.com-Maison_Neue_Book.ttf");
+}
+
+.projectCover {
+  /* background-color: black; */
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.projectPage {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  /* transform: translateX(-55%); */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.projectTitle {
+  width: 300px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+  gap: 80px;
+}
+
+.projectTitle h1 {
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "dirtyline";
+  color: white;
+  text-align: left;
+}
+
+.viewmore {
+  width: auto;
+  margin-left: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+  gap: 50px;
+  transition: all 0.3s ease;
+}
+
+.viewmore:hover {
+  transform: scale(1.1);
+}
+
+.container1,
+.container2,
+.container3 {
+  width: 60vw;
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.container1,
+.container2,
+.container3 :hover{
+  cursor: pointer;
+}
+
+.container1 {
+  background-color: #1b1b1b;
+}
+
+.container1>.projDesc,.container1>.projName,.container1>.projNum{
+  color: white;
+}
+
+.container2 {
+  background-color: #f9fdfe;
+}
+
+.container2>.projDesc,.container2>.projName,.container2>.projNum{
+  /* color: white; */
+  color: #474747;
+  font-weight: 900;
+}
+
+.container3 {
+  background-color: #baf400;
+}
+
+.container3>.projDesc,.container3>.projName,.container3>.projNum{
+  color: #474747;
+  font-weight: 900;
+}
+
+.projImg {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.projMedia {
+  width: 100%;
+  height: 100%;
+}
+
+.projImgMask {
+  width: 65%;
+  height: 90%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-color: white;
+  border-radius: 340px;
+  /* mix-blend-mode: screen; */
+  background-repeat: round;
+}
+#mask1{
+  background-image: url('/projects/cityscapes.webp');
+}
+#mask2{
+  background-image: url('/projects/helmet.webp');
+}
+#mask3{
+  background-image: url('/projects/agroAI.webp');
+}
+
+.projDesc {
+  width: 50%;
+  height: 70%;
+  font-family: "maison";
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  text-align: start;
+  font-size: x-large;
+  color: #474747;
+}
+
+.projName {
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  width: 70%;
+  height: 30%;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "dirtyline";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  left: 25px;
+  color: #474747;
+}
+
+.projNum {
+  font-family: inter;
+  width: 30%;
+  height: 30%;
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  left: 35px;
+  color: #474747;
+}
+
+.projectTitle-viewmore {
+  width: 300px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+  gap: 80px;
+}
+
+.projectTitle-viewmore h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: lowercase;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "dirtyline";
+  color: white;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 850px) {
+
+  .container1,
+  .container2,
+  .container3 {
+    width: 95vw;
+    height: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+
+  .projDesc {
+    padding-top: 40px;
+    width: 100%;
+    height: 30%;
+    font-family: "maison";
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-align: start;
+    font-size: smaller;
+    color: #474747;
+  }
+
+  .projImgMask {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 18%;
+    background-color: white;
+    border-radius: 340px;
+    /* mix-blend-mode: screen; */
+  }
+
+  .projImg {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .projName {
+    letter-spacing: 2px;
+    width: 70%;
+    height: 30%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "dirtyline";
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    left: 0px;
+    color: #474747;
+  }
+
+  .projNum {
+    width: 30%;
+    height: 30%;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    left: 0px;
+    color: #474747;
+  }
+}

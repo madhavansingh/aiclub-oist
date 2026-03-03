@@ -1,0 +1,84 @@
+/* Main container */
+.gallery-container {
+  background-color:#131315; 
+  min-height: 100vh;
+  padding: 1rem;
+  background-attachment: fixed;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.gallery-title {
+  font-family: inter;
+  font-size: 8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout */
+.gallery-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  /* Increased gap to prevent overlap */
+}
+
+/* Individual column */
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* Added gap between boxes */
+}
+
+/* Gallery items */
+.gallery-item {
+  padding: 0.5rem;
+  /* Padding to ensure spacing within */
+}
+
+
+/* Item heights */
+.tall {
+  height: 20rem;
+  /* Reduced height to prevent overlap */
+}
+
+.medium {
+  height: 14rem;
+  /* Adjusted height */
+}
+
+.small {
+  height: 10rem;
+}
+
+/* Item content */
+.item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .gallery-title{
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .gallery-grid{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}

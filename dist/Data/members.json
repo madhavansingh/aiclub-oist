@@ -1,0 +1,468 @@
+{
+  "web": [
+    {
+      "name": "Sanidhya Sahu",
+      "img": "/membersIMG/website team/sanidhya.webp",
+      "msg": "Catch me on LinkedIn pretending I know what I’m doing."
+    },
+    {
+      "name": "Mohak S",
+      "img": "/membersIMG/website team/Mohak.webp",
+      "msg": "Ain't got nothing"
+    },
+    {
+      "name": "Bhavesh Bhakta",
+      "img": "/membersIMG/website team/Bhavesh.webp",
+      "msg": "I already forgot everything I learned here."
+    },
+    {
+      "name": "Akshad Agrawal",
+      "img": "/membersIMG/website team/akshad.webp",
+      "msg": "Change is inevitable."
+    },
+    {
+      "name": "Harsh Sahu",
+      "img": "/membersIMG/website team/HARSH SAHU_23BAI10199_WEB TEAM.webp",
+      "msg": "In the name of Clean Code, I will refactor you!"
+    },
+    {
+      "name": "Adarsh Singh",
+      "img": "/membersIMG/website team/AdarshSingh_23BEY10062_WebTeam.webp",
+      "msg": "The magic you are looking for is in the work you are avoiding ."
+    },
+    {
+      "name": "Raghav Dadich",
+      "img": "/membersIMG/website team/RaghavDadhich_23BAI10845_WebTeam.webp",
+      "msg": "If you don't believe in yourself, nobody gonna believe in you"
+    },
+    {
+      "name": "Khushi Agrawal",
+      "img": "/membersIMG/website team/KhushiAggarwal_22BCE10482_WebsiteTeam.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aman Patre",
+      "img": "/membersIMG/website team/AmanPatre_23BCE11840_WebTeam - Aman Patre 23BCE11840.webp",
+      "msg": "Driven by challenges, inspired by solutions."
+    },
+    {
+      "name": "Ayushman",
+      "img": "/membersIMG/website team/IMG_20241118_014023 - Ayushman Gupta 23bai11059.webp",
+      "msg": "You can't control the wind, but you can adjust your sails."
+    },
+    {
+      "name": "Mayank Arora",
+      "img": "/membersIMG/website team/Photo - Mayank Arora 23bai10505.webp",
+      "msg": "Programming isn't about what you know; it's about what you can figure out."
+    },
+    {
+      "name": "Yeshu Agarwal",
+      "img": "/membersIMG/website team/YeshuAgarwal_23BSA10018_WebTeam - Yeshu Agarwal 23bsa10018.webp",
+      "msg": "Full Stack Depression"
+    }
+  ],
+  "tech": [
+    {
+      "name": "Kshitij Dalvi",
+      "img": "/membersIMG/Technical Team/Kshitij_22BAI10285_Tech.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aryan Pahari",
+      "img": "/membersIMG/Technical Team/Aryan Pahari (23BAI10337) Technical Team_.webp",
+      "msg": "Before we master artificial intelligence, maybe we should focus on natural stupidity—it seems to be winning the race"
+    },
+    {
+      "name": "Aditya Khamitkar",
+      "img": "/membersIMG/Technical Team/Khamitkar_22MIP10006_Tech.webp",
+      "msg": "Import tensorflow as torch — because I like complicating my life."
+    },
+    {
+      "name": "Anushka",
+      "img": "/membersIMG/Technical Team/anushka_23MIM10062_Technical team - Anushka 23mim10062.webp",
+      "msg": "Innovating today, shaping tomorrow."
+    },
+    {
+      "name": "Mohammad Ammar",
+      "img": "/membersIMG/Technical Team/Md Ammar 22BCE10394 Tech.webp",
+      "msg": "Every challenge is just an algorithm waiting to be solved."
+    },
+    {
+      "name": "Siddharth Nagaych",
+      "img": "/membersIMG/Technical Team/SIDDHARTH NAGAYCH 23MIM10081 TECHNICAL TEAM.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Surjit Kumar",
+      "img": "/membersIMG/Technical Team/Surjit kumar S R_22BCE11677_technical_team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aini Rizvi",
+      "img": "/membersIMG/Technical Team/Aini-Rizvi_23BCE11190_technical-team - Aini Rizvi 23bce11190.webp",
+      "msg": "I fail to see how you fail to see that this is awesome- big hero 6"
+    },
+    {
+      "name": "Shreya Agrawal",
+      "img": "/membersIMG/Technical Team/sh_agrawal - Shreya Agrawal 23BAI11407.webp",
+      "msg": "You learn from the experienced what mistakes can't teach"
+    },
+    {
+      "name": "Allen Simeon",
+      "img": "/membersIMG/Technical Team/Allen Simeon.webp",
+      "msg": "Fearless ambition fuels unstoppable progress."
+    },
+    {
+      "name": "Tanay Semwal",
+      "img": "/membersIMG/Technical Team/TanaySemwal.webp",
+      "msg": "Hardwork pays off eventually, but procrastination pays off right now"
+    }
+    
+  ],
+  "event": [
+    {
+      "name": "Meet Vachhani",
+      "img": "/membersIMG/Event Team/MeetVachhani_22MIM10069_Eventteam.webp",
+      "msg": "Github is where I Fork;s"
+    },
+    {
+      "name": "Aadish Chaturvedi",
+      "img": "/membersIMG/Event Team/Aadish Chaturvedi _ 23BAI11367_ Event team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aryan Shashi Mishra",
+      "img": "/membersIMG/Event Team/Aryan Shashi Mishra_22BHI10059_Events.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Kaneez Parveen",
+      "img": "/membersIMG/Event Team/KANEEZ PARVEEN_23BCE10353_EVENT TEAM.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Rishima",
+      "img": "/membersIMG/Event Team/Rishima_23BCY10231_EVENT MANAGEMENT TEAM .webp",
+      "msg": "Why does the event team never stress about the little things? Because we know there are no little things"
+    },
+    {
+      "name": "Utkarsh Yadav",
+      "img": "/membersIMG/Event Team/Utkarsh Yadav_22BAI10301_Event Team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Vedant S Patil",
+      "img": "/membersIMG/Event Team/Vedant S Patil_23BCE10313_event managment.webp",
+      "msg": "Time makes things"
+    },
+    {
+      "name": "Harsh Rathore",
+      "img": "/membersIMG/Event Team/Harsh Rathore_23BAI10453_Event Management Team - Harsh Rathore 23bai10453.webp",
+      "msg": "I'll leave tomorrow's problems to tomorrow's me"
+    },
+    {
+      "name": "Dilisha Khan",
+      "img": "/membersIMG/Event Team/DILISHA_23BAI10870_EVENTTEAM - Dilisha Khan 23bai10870.webp",
+      "msg": "Humans remember what matters, AI remembers everything!"
+    },
+    {
+      "name": "Rohit Dubey",
+      "img": "/membersIMG/Event Team/Rohit Dubey_24BAI10353_Event Team - ROHIT DUBEY 24BAI10353.webp",
+      "msg": "Today has been a day. And tomorrow will be another day. The horrors persist but so must I"
+    },
+    {
+      "name": "Lakshya Hirani",
+      "img": "/membersIMG/Event Team/Lakshya_23bai10031_event - Lakshya Dinesh Hirani 23bai10031.webp",
+      "msg": "Seek Discomfort"
+    }
+  ],
+  "editorial": [
+    {
+      "name": "Wrishita Paul",
+      "img": "/membersIMG/Editorial Team/WrishitaPaul_22BAI10226_EditorialTeam.webp",
+      "msg": "Own your own story."
+    },
+    {
+      "name": "Rashi Dubey",
+      "img": "/membersIMG/Editorial Team/Rashi Dubey_22BAI10225_Editorial Team.webp",
+      "msg": "Why be a man when you can be batman."
+    },
+    {
+      "name": "A.Sricharan",
+      "img": "/membersIMG/Editorial Team/A.Sricharan_22BCE10743_Editorial.webp",
+      "msg": "When's this due?"
+    },
+    {
+      "name": "Qurat ul aaein",
+      "img": "/membersIMG/Editorial Team/Qurat ul aaein_22BAI10362_Editorial team.webp",
+      "msg": "No one can make you feel inferior without your consent."
+    },
+    {
+      "name": "Renila Rannish",
+      "img": "/membersIMG/Editorial Team/Renila Rannish AJ_23MIM10006_Editorial Team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Saurabh Jha",
+      "img": "/membersIMG/Editorial Team/Saurabh Jha_22BCE10125_Editorial Team.webp",
+      "msg": "Life is short. Smile while you still have teeth."
+    },
+    {
+      "name": "Shreenita Saha",
+      "img": "/membersIMG/Editorial Team/Shreenita Saha_22BAI10122_Editorial team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Kriti Gupta",
+      "img": "/membersIMG/Editorial Team/KRITIGUPTA_23BCE10744._EDITORIAL - Kriti Gupta 23bce10744.webp",
+      "msg": "Fueled by caffeine and curiosity."
+    }
+  ],
+  "socialmedia": [
+    {
+      "name": "Saumya Tiwari",
+      "img": "/membersIMG/saumya.webp",
+      "msg": "Finding meaning in tananana's of songs"
+    },
+    {
+      "name": "Deeksha Sharma",
+      "img": "/membersIMG/Social Media Team/Deeksha_23bcg10065_social media and marketing - Deeksha Sharma 23bcg10065.webp",
+      "msg": "When you choose yourself, everything around you will choose you too."
+    },
+    {
+      "name": "Nandini Modi",
+      "img": "/membersIMG/Social Media Team/Nandini Modi_22BEY10133_Social Media.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Anushka Dubey",
+      "img": "/membersIMG/Social Media Team/anushka.23bce11492.socialmedia - Anushka Dubey 23bce11492.webp",
+      "msg": "Believe, create, inspire—change begins with you"
+    },
+    {
+      "name": "Dhruv Bhalode",
+      "img": "/membersIMG/Social Media Team/Dhruv Bhalode_22BAI10062_Social Media.webp",
+      "msg": "Not innovating isn't an option."
+    },
+    {
+      "name": "Sawanpreet Singh Badyal",
+      "img": "/membersIMG/Social Media Team/Sawanpreet.webp",
+      "msg": "If you are dreaming, Make sure you dream big"
+    },
+    {
+      "name": "Shantanu Giri",
+      "img": "/membersIMG/Social Media Team/Shantanu.webp",
+      "msg": "Might be a sinner and might be a saint"
+    },
+    {
+      "name": "Lakshya",
+      "img": "/membersIMG/Social Media Team/LAKSHYA_23BAI10814 - Lakshya Mangla 23bai10814.webp",
+      "msg": "There's some need for speed this time."
+    },
+    {
+      "name": "Bhoomika Bajaj",
+      "img": "/membersIMG/Social Media Team/BhoomikaBajaj_22BHI10007_Social Media .webp",
+      "msg": "AIC '24"
+    }
+  ],
+  "graphics": [
+    {
+      "name": "Harsh Dayal",
+      "img": "/membersIMG/Graphics Team/HarshDayal_22BCE10564_GraphicsTeam.webp",
+      "msg": "Wooimbouttamakeanameformyselfere 🗣️🔥"
+    },
+    {
+      "name": "Ansh Singh",
+      "img": "/membersIMG/Graphics Team/ANSH SINGH_22BCE10467_GRAPHICS TEAM.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aryansh Dutta",
+      "img": "/membersIMG/Graphics Team/Aryansh Dutta 23BAI10824 Graphics Team.webp",
+      "msg": "Too much pleasure is pain"
+    },
+    {
+      "name": "Rishav Raj",
+      "img": "/membersIMG/Graphics Team/RISHAV_RAJ_22BCE11035_GRAPHICS-TEAM.webp",
+      "msg": "Fragment of the whole first fish is more bait, more fishes follow."
+    },
+    {
+      "name": "Saanvi Sharma",
+      "img": "/membersIMG/Graphics Team/SaanviSharma_22BCE11027_GraphicsTeam.webp",
+      "msg": "I go hand-in-hand with chaos"
+    },
+    {
+      "name": "Vitthal Sirvastava",
+      "img": "/membersIMG/Graphics Team/Vitthal_23bai10349_Graphics Team - Vitthal Das Srivastava 23bai10349.webp",
+      "msg": "I walk around like everything's fine, but deep down, inside my shoe, my sock is sliding off."
+    },
+    {
+      "name": "Nameer Mohammed Khan",
+      "img": "/membersIMG/Graphics Team/NAMEER MOHAMMED KHAN_24BAI10892_GRAPHICS TEAM - NAMEER MOHAMMED KHAN 24BAI10892.webp",
+      "msg": "Be uncommon amongst uncommon people"
+    },
+    {
+      "name": "Nitin Vishwakarma",
+      "img": "/membersIMG/Graphics Team/Nitin_23BCE11547_Graphics - Nitin Vishwakarma 23bce11547.webp",
+      "msg": "Life is code, debug often"
+    },
+    {
+      "name": "Sarthak Satish Borekar",
+      "img": "/membersIMG/Graphics Team/Sarthak_23BCE10568_Graphics&Videography - Sarthak Satish Borekar 23bce10568.webp",
+      "msg": "Simplicity is the soul of sophistication"
+    },
+    {
+      "name": "Priyansh Chaudhary",
+      "img": "/membersIMG/Graphics Team/Screenshot_2024-11-18-22-30-53-33_92460851df6f172a4592fca41cc2d2e6 - Priyansh Chaudhary 23bce10184.webp",
+      "msg": "Life is better in the fast lane"
+    },
+    {
+      "name": "Sanskriti Singh",
+      "img": "/membersIMG/Graphics Team/SANSKRITI_SINGH_23BAI10269_GRAPHICS_TEAM - Sanskriti Singh 23bai10269.webp",
+      "msg": "There are no facts, only interpretations."
+    }
+  ],
+  "content": [
+    {
+      "name": "Ashes Nanda",
+      "img": "/membersIMG/Content Team/ASHESNANDA_22BAI10180_CONTENTTEAM.webp",
+      "msg": "We're all smart. Distinguish yourself by being kind."
+    },
+    {
+      "name": "Riya Rathod",
+      "img": "/membersIMG/Content Team/RIYARATHOD_23BAI10074_CONTENTTEAM.webp",
+      "msg": "If creativity is my canvas, content writing is my masterpiece."
+    },
+    {
+      "name": "Shruti Mehkarkar",
+      "img": "/membersIMG/Content Team/SHRUTIMEHKARKAR_23BAI10242_CONTENTTEAM.webp",
+      "msg": "Work hard, laugh harder!"
+    },
+    {
+      "name": "Prateek Vashishtha",
+      "img": "/membersIMG/Content Team/Prateek Vashishtha_23BCG10010_Content team - Prateek Vashishtha 23bcg10010.webp",
+      "msg": "I'm not chasing stars; I'm building constellations"
+    },
+    {
+      "name": "Komal Singh",
+      "img": "/membersIMG/Content Team/KOMALSINGH_23BAI10561_CONTENT - Komal Singh 23bai10561.webp",
+      "msg": "Blending creativity with AI's brilliance to craft innovative content!"
+    },
+    {
+      "name": "Akanksha Tripathi",
+      "img": "/membersIMG/Content Team/AKANKSHA TRIPATHI ,23BCE10062,CONTENT TEAM - Akanksha Tripathi 23bce10062.webp",
+      "msg": "Determination the ability to keep going no matter how hard it gets🔥"
+    }
+  ],
+  "outreach": [
+    {
+      "name": "Harshit Shukla",
+      "img": "/membersIMG/PR & Outreach Team/Harshit Shukla_22BCE10655_PR.webp",
+      "msg": "No half measures!"
+    },
+    {
+      "name": "Faleha Qazi",
+      "img": "/membersIMG/PR & Outreach Team/Faleha Qazi_22BHI10153_PR.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aditi Raj",
+      "img": "/membersIMG/PR & Outreach Team/Aditi raj -23BAI10178-PR team - Aditi Raj 23bai10178.webp",
+      "msg": "AI is not magic, it's just software that we can understand."
+    },
+    {
+      "name": "Khushi Thakur",
+      "img": "/membersIMG/PR & Outreach Team/Khushi Thakur_22BCE10611_PR team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Rishav Mishra",
+      "img": "/membersIMG/PR & Outreach Team/Rishav Mishra _ 23BHI10011_ PR team.webp",
+      "msg": "Destination demands patience."
+    },
+    {
+      "name": "Soumyashis Sarkar",
+      "img": "/membersIMG/PR & Outreach Team/Soumyashis,Sarkar-22BCE10621_PR.webp",
+      "msg": "Brevity is not my strongest suit"
+    },
+    {
+      "name": "Vidit Kumar",
+      "img": "/membersIMG/PR & Outreach Team/Vidit Kumar Singh 23bai10196.webp",
+      "msg": "There is Tomorrow"
+    },
+    {
+      "name": "Aarya Shrivaastava",
+      "img": "/membersIMG/PR & Outreach Team/Aarya Shrivaastava_23BCE10728_PR and Outreach - Aarya Shrivaastava 23bce10728.webp",
+      "msg": "Bridging minds and innovation through meaningful connections."
+    },
+    {
+      "name": "Akshat Singh",
+      "img": "/membersIMG/PR & Outreach Team/AkshatSingh_24bce10004_PR_and_Outreach - AKSHAT SINGH 24BCE10004.webp",
+      "msg": "Even if there's a 1% chance, I will give my 100%"
+    }
+  ],
+  "partnership": [
+    {
+      "name": "Aaryan Shah",
+      "img": "/membersIMG/Partnership Team/AARYAN SHAH_21BAI10355_PARTNERSHIP TEAM__11zon.webp",
+      "msg": "Partnering up like a pro—because who needs superheroes when you've got a partnership team and sponsors that make magic happen?"
+    },
+    {
+      "name": "Utkarsha Aherrao",
+      "img": "/membersIMG/Partnership Team/Utkarsha Aherrao_22BCE10933_PartnershipTeam.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Saanvi Anand",
+      "img": "/membersIMG/Partnership Team/Saanvi Anand_22BSA10264_Partnership Team.webp",
+      "msg": "With shared visions , progress knows no limit."
+    },
+    {
+      "name": "Arpit Gupta",
+      "img": "/membersIMG/Partnership Team/ARPIT GUPTA_22BCE10302_PartnerShip TEam.webp",
+      "msg": "WHERE IS THE FUND ??!! MEET US THE PAISA BEHIND THE EVENT"
+    },
+    {
+      "name": "Abhishek Kumar",
+      "img": "/membersIMG/Partnership Team/Abhishek Kumar_ 23BHI10052_Partnership Team.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Aadit Singal",
+      "img": "/membersIMG/Partnership Team/Aadit Singal_22BAI10074_Partnership.webp",
+      "msg": "AIC '24"
+    }
+  ],
+  "board": [
+    {
+      "name": "Punit Kaushik",
+      "img": "/membersIMG/punit.webp",
+      "msg": "You will never reach the banana if you do not have the courage to climb."
+    },
+    {
+      "name": "Anushka Singh",
+      "img": "/membersIMG/anushka.webp",
+      "msg": "Second in command, making chaos look so grand."
+    },
+    {
+      "name": "Virat Srivastava",
+      "img": "/membersIMG/virat.webp",
+      "msg": "With shared visions , progress knows no limit."
+    },
+    {
+      "name": "Aarushi",
+      "img": "/membersIMG/aarushi.webp",
+      "msg": "Thank You, Beyonce!!"
+    },
+    {
+      "name": "Arpit Sengar",
+      "img": "/membersIMG/arpit.webp",
+      "msg": "AIC '24"
+    },
+    {
+      "name": "Tarun Nichwani",
+      "img": "/membersIMG/tarun.webp",
+      "msg": "Everything that drowns me makes me wanna fly."
+    }
+  ]
+}

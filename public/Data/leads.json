@@ -1,0 +1,166 @@
+[
+    {
+        "name": "Ishika Agarwal",
+        "pos": "VP",
+        "teamPos": "Vice President",
+        "img": "/membersIMG/ishika.webp",
+        "team":"pannel2",
+        "profileLink": "https://www.linkedin.com/in/ishika-agrawal-b070582b3/"
+    },
+    {
+        "name": "Hardik Rahangdale",
+        "pos": "Lead",
+        "teamPos": "Marketing Lead",
+        "img": "/membersIMG/hardik.webp",
+        "team":"tech",
+        "profileLink": "https://www.linkedin.com/in/hardik-rahangdale-537941310/"
+    },
+    {
+        "name": "Kavya Agarwal",
+        "pos": "Lead",
+        "teamPos": "Technical Lead",
+        "img": "/membersIMG/kavya.webp",
+        "team":"event",
+        "profileLink": "https://www.linkedin.com/in/kavya-agrawal-3459942b6/"
+    },
+    {
+        "team":"editorial",
+        "name": "Harshit Panwar",
+        "pos": "Lead",
+        "teamPos": "Media & Design Team",
+        "img": "/membersIMG/harshit.webp",
+        "profileLink": "https://www.linkedin.com/in/harshitpawarrr/"
+    },
+    {
+        "team":"pannel4",
+        "name": "Manan Jain",
+        "pos": "OM",
+        "teamPos": "Editorial Team",
+        "img": "/membersIMG/manan.webp",
+        "profileLink": "https://www.linkedin.com/in/manan-jain-48257a395/"
+    },
+    {
+        "team":"pannel1",
+        "name": "Shreya Gupta",
+        "pos": "P",
+        "teamPos": "Marketing Teamt",
+        "img": "/membersIMG/shreya.webp",
+        "profileLink": "https://www.linkedin.com/in/shreya-g-957441323/"
+    },
+    {
+        "team":"web",
+        "name": "Mayank Sharma",
+        "pos": "Lead",
+        "teamPos": "Event Management Team",
+        "img": "/membersIMG/mayank.webp",
+        "profileLink": "https://www.linkedin.com/in/sharmamayankk/"
+    },
+    {
+        "team":"content",
+        "name": "Aadi Jain",
+        "pos": "Lead",
+        "teamPos": "President",
+        "img": "/membersIMG/aadi.webp",
+        "profileLink": "https://www.linkedin.com/in/aadi-jain-997a22281/"
+    },
+    
+    {
+        "team":"Editorial Lead",
+        "name": "Pranav Gupta",
+        "pos": "Lead",
+        "teamPos": "Editorial Lead",
+        "img": "/membersIMG/pranav.webp",
+        "profileLink": "https://www.linkedin.com/in/pranav-gupta-46b878295/"
+    },
+    {
+        "team":"pannel5",
+        "name": "Swati Mishra",
+        "pos": "OM",
+        "teamPos": "Event Management Lead",
+        "img": "/membersIMG/swati.webp",
+        "profileLink": "https://www.linkedin.com/in/swati-mishra-a82421338/"
+    },
+    {
+        "team":"pannel3",
+        "name": "Shivansh Gupta",
+        "pos": "GSC",
+        "teamPos": "Media & Design Team",
+        "img": "/membersIMG/shivansh.webp",
+        "profileLink": "https://www.linkedin.com/in/shivansh-gupta-568348361/"
+    },
+    {
+        "team":"socialmedia",
+        "name": "Madhavan Singh Parihar",
+        "pos": "Lead",
+        "teamPos": "Technical Team",
+        "img": "/membersIMG/madhavan.webp",
+        "profileLink": "https://www.linkedin.com/in/madhavan-singh/"
+    },
+    {
+        "team":"outreach",
+        "name": "Riya Panjwani",
+        "pos": "Lead",
+        "teamPos": "Marketing Team",
+        "img": "/membersIMG/riya.webp",
+        "profileLink": "https://www.linkedin.com/in/riya-panjwani-9b1b8a357/"
+    },
+    
+    {
+        "team":"partnership",
+        "name": "Kritika Shrivastava",
+        "pos": "Lead",
+        "teamPos": "Event Management Team",
+        "img": "/membersIMG/kritika.webp",
+        "profileLink": "https://www.linkedin.com/in/kritika-shrivastava-188773332/"
+    },
+    
+    
+    {
+        "team":"pannel6",
+        "name": "Aarav Raikwar",
+        "pos": "OM",
+        "teamPos": "Secretary",
+        "img": "/membersIMG/aarav.webp",
+        "profileLink": "https://www.linkedin.com/in/aarav-raikwar-a7328028a/"
+    },
+    {
+  "team": "tech",
+  "name": "Sunidhi Patle",
+  "pos": "Member",
+  "teamPos": "Treasurer",
+  "img": "/membersIMG/sunidhi.webp",
+        "profileLink": "https://www.linkedin.com/in/sunidhi-patle-921132387/"
+},
+{
+  "team": "web",
+  "name": "Shagun Upadhyay",
+  "pos": "Member",
+  "teamPos": "Media & Design Team",
+  "img": "/membersIMG/shagun.webp",
+        "profileLink": "https://www.linkedin.com/in/shagun-upadhyay-19451733a/"
+},
+{
+  "team": "content",
+  "name": "Aashi Tomar",
+  "pos": "Member",
+  "teamPos": "Editorial Team",
+  "img": "/membersIMG/aashi.webp",
+        "profileLink": "https://www.linkedin.com/in/aashi-tomar-448a51333/"
+},
+{
+  "team": "graphics",
+  "name": "Aniket Chaturvedi",
+  "pos": "Member",
+  "teamPos": "Technical Team",
+  "img": "/membersIMG/aniket.webp",
+        "profileLink": "https://www.linkedin.com/in/anikett77/"
+},
+{
+  "team": "event",
+  "name": "Shipra Gupta",
+  "pos": "Member",
+  "teamPos": "Marketing Team",
+  "img": "/membersIMG/shipra.webp",
+        "profileLink": "https://www.linkedin.com/in/shipra-gupta-677565371/"
+}
+]

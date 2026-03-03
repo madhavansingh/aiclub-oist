@@ -1,0 +1,38 @@
+{
+    "1": {
+        "name": "Cypher 30",
+        "keyWords": [
+            "Code",
+            "Compete",
+            "Conquer"
+        ],
+        "bannerPath": "/eventBanners/chai.webp"
+    },
+    "2": {
+        "name": "Web Wizards",
+        "keyWords": [
+            "Build",
+            "Design",
+            "Deploy"
+        ],
+        "bannerPath": "/eventBanners/aicrypt.webp"
+    },
+    "3": {
+        "name": "TEDx",
+        "keyWords": [
+            "Ideas",
+            "Voices",
+            "Impact"
+        ],
+        "bannerPath": "/eventBanners/genesis.webp"
+    },
+    "4": {
+        "name": "Canva Workshop",
+        "keyWords": [
+            "Design",
+            "Create",
+            "Elevate"
+        ],
+        "bannerPath": "/eventBanners/hackExchange2.webp"
+    }
+}

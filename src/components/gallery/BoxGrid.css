@@ -1,0 +1,35 @@
+
+
+.grid-container {
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: #131315;
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  padding-top: 80px
+}
+#galleryHeading{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  font-family: neue;
+  left: 35%;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  #galleryHeading{
+    font-size: 20px;
+    top: 5%;
+    left: 13%;
+  }
+  .grid-container{
+    padding-top: 90px;
+  }
+}

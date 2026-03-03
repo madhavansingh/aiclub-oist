@@ -1,0 +1,115 @@
+@font-face {
+  font-family: dirtyline;
+  src: url("../../fonts/dirtyline-36daysoftype-2022.otf");
+}
+
+@font-face {
+  font-family: maison;
+  src: url("../../fonts/fonnts.com-Maison_Neue_Book.ttf");
+}
+
+.Mainfooter {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative;
+}
+
+.footCont1 {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #baf400;
+  gap: 10px;
+  border-radius: 550px;
+  content-visibility: auto;
+}
+
+.dotLayer {
+  background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
+  background-size: 20px 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.quoteLayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-size: 4.5em;
+}
+
+.footCont1>h1 {
+  padding-top: 80px;
+  font-family: dirtyline;
+  text-transform: lowercase;
+  letter-spacing: 0px;
+  font-size: 28vw;
+  font-weight: bold;
+  color: white;
+  word-spacing: -50px;
+}
+
+.Mainfooter>img {
+  width: 50px;
+  position: absolute;
+  right: 35px;
+  cursor: pointer;
+  top: 0px;
+}
+
+
+.topArrowtxt {
+  font-family: maison;
+  position: absolute;
+  right: 32px;
+  padding-top: 90px;
+  font-size: small;
+  cursor: pointer;
+  top: -25px;
+  color: white;
+}
+
+.footCont2 {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #131315;
+  color: white;
+  font-family: maison;
+}
+
+.footCont2>.foot2cont2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.footCont2>.foot2cont2>a {
+  color: #baf400;
+  text-decoration: none;
+}
+
+.foot2cont1,
+.foot2cont2,
+.foot2cont3 {
+  font-size: large;
+  letter-spacing: 1px;
+}
