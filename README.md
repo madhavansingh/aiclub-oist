@@ -1,1 +1,1 @@
-# aiclub-oist
+AI CLUB OIST OFFICIAL WEBSITE
