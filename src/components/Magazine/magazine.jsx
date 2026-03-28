@@ -217,48 +217,50 @@ function Flipbook() {
               className={`magazine-scaler ${isLoading ? 'loading' : ''}`}
               style={{ transform: `scale(${scale})`, transformOrigin: 'center center' }}
             >
-              <HTMLFlipBook
-                ref={book}
-                width={baseWidth.current}
-                height={baseHeight.current}
-                size="stretch"
-                minWidth={baseWidth.current}
-                maxWidth={baseWidth.current}
-                minHeight={baseHeight.current}
-                maxHeight={baseHeight.current}
-                showCover={true}
-                onFlip={onFlip}
-                className="magazine"
-                flippingTime={1000}
-                usePortrait={isMobile}
-                startPage={0}
-                drawShadow={true}
-                maxShadowOpacity={0.5}
-                showPageCorners={true}
-                disableFlipByClick={false}
-                mobileScrollSupport={true}
+              <Document
+                file={pdf}
+                onLoadSuccess={onDocumentLoadSuccess}
+                loading={<div className="loading">Loading magazine...</div>}
+                error={<div className="error">Error loading PDF!</div>}
               >
-                {[...Array(numPages).keys()].map((n) => (
-                  <Pages key={n} number={`${n + 1}`}>
-                    <Document
-                      file={pdf}
-                      onLoadSuccess={onDocumentLoadSuccess}
-                      loading={<div className="loading">Loading page...</div>}
-                      error={<div className="error">Error loading PDF!</div>}
-                    >
-                      <Page
-                        pageNumber={n + 1}
-                        renderAnnotationLayer={false}
-                        renderTextLayer={false}
-                        width={baseWidth.current}
-                        height={baseHeight.current}
-                        className="pdf-page"
-                        loading={<div className="loading">Loading page...</div>}
-                      />
-                    </Document>
-                  </Pages>
-                ))}
-              </HTMLFlipBook>
+                {numPages > 0 && (
+                  <HTMLFlipBook
+                    ref={book}
+                    width={baseWidth.current}
+                    height={baseHeight.current}
+                    size="stretch"
+                    minWidth={baseWidth.current}
+                    maxWidth={baseWidth.current}
+                    minHeight={baseHeight.current}
+                    maxHeight={baseHeight.current}
+                    showCover={true}
+                    onFlip={onFlip}
+                    className="magazine"
+                    flippingTime={1000}
+                    usePortrait={isMobile}
+                    startPage={0}
+                    drawShadow={true}
+                    maxShadowOpacity={0.5}
+                    showPageCorners={true}
+                    disableFlipByClick={false}
+                    mobileScrollSupport={true}
+                  >
+                    {[...Array(numPages).keys()].map((n) => (
+                      <Pages key={n} number={`${n + 1}`}>
+                        <Page
+                          pageNumber={n + 1}
+                          renderAnnotationLayer={false}
+                          renderTextLayer={false}
+                          width={baseWidth.current}
+                          height={baseHeight.current}
+                          className="pdf-page"
+                          loading={<div className="loading">Loading page...</div>}
+                        />
+                      </Pages>
+                    ))}
+                  </HTMLFlipBook>
+                )}
+              </Document>
             </div>
           )}
         </div>
