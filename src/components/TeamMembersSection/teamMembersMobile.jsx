@@ -146,7 +146,7 @@ const BrandingSection = () => {
             <h3>{item.name}</h3>
           </div>
           <picture>
-            <img fetchpriority="high" alt='' src={item.img} />
+            <img loading="lazy" decoding="async" alt='' src={item.img} />
           </picture>
           <div>
             <span>{item.teamPos}</span>

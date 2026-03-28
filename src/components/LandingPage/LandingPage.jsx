@@ -21,7 +21,7 @@ function LandingPage() {
     gsap.to(landingRef.current, {
       scale: 0.9,
       opacity: 0,
-      filter: "blur(10px)",
+      willChange: "transform, opacity",
       scrollTrigger: {
         trigger: landingRef.current,
         scroller: "body",
