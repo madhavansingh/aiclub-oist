@@ -140,8 +140,14 @@ const BrandingSection = () => {
 
   const renderListItems = (items) => {
     return items.map((item, index) => (
-      <Link to={item.team != false ? `/members?team=${item.team == "pannel1" || item.team == "pannel2" || item.team == "pannel3" || item.team == "pannel4" || item.team == "pannel5" || item.team == "pannel6" ? "board" : item.team}` : null} style={{ textDecoration: "none" }}>
-        <li key={index}>
+      <a
+        href={item.profileLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none" }}
+        key={index}
+      >
+        <li id={`view${item.team}`}>
           <div>
             <h3>{item.name}</h3>
           </div>
@@ -152,7 +158,7 @@ const BrandingSection = () => {
             <span>{item.teamPos}</span>
           </div>
         </li>
-      </Link >
+      </a>
     ));
   };
 
