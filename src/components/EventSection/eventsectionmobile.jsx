@@ -11,19 +11,6 @@ const EventsSectionMobile = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    gsap.to("body", {
-      backgroundColor: "#131315",
-      scrollTrigger: {
-        trigger: ".eventSection",
-        scroller: "body",
-        start: "top 20%",
-        end: "top 10%",
-        scrub: 1,
-        onEnter: () => setIsDark(true),
-        onLeaveBack: () => setIsDark(false),
-      },
-    });
-
     const spans = gsap.utils.toArray('.slider span');
     spans.forEach((span) => {
       gsap.fromTo(span,
@@ -32,6 +19,7 @@ const EventsSectionMobile = () => {
           scale: 1,
           opacity: 1,
           y: 0,
+          willChange: "transform, opacity",
           scrollTrigger: {
             trigger: span,
             scroller: "body",

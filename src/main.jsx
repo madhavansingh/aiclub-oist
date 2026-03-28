@@ -6,7 +6,8 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 const lenisOptions = {
   lerp: 0.1,
   duration: 1.5,
-  smooth: true,
+  smoothWheel: true,
+  smoothTouch: false,
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

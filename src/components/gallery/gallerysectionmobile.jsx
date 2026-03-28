@@ -36,6 +36,7 @@ const GallerySectionMobile = () => {
     gsap.to("#galleryBox1", {
       y: 0,
       opacity: 1,
+      willChange: "transform, opacity",
       scrollTrigger: {
         trigger: ".galleryWrap",
         start: "top 70%",
@@ -46,6 +47,7 @@ const GallerySectionMobile = () => {
     gsap.to("#galleryBox2", {
       y: 0,
       opacity: 1,
+      willChange: "transform, opacity",
       scrollTrigger: {
         trigger: ".galleryWrap",
         start: "top 70%",
@@ -56,6 +58,7 @@ const GallerySectionMobile = () => {
     gsap.to("#galleryBox3", {
       y: 0,
       opacity: 1,
+      willChange: "transform, opacity",
       scrollTrigger: {
         trigger: ".galleryWrap",
         start: "top 70%",
@@ -67,6 +70,7 @@ const GallerySectionMobile = () => {
       x: 0,
       y: 0,
       opacity: 1,
+      willChange: "transform, opacity",
       scrollTrigger: {
         trigger: ".galleryWrap",
         start: "top 70%",
@@ -78,6 +82,7 @@ const GallerySectionMobile = () => {
       x: 0,
       y: 0,
       opacity: 1,
+      willChange: "transform, opacity",
       scrollTrigger: {
         trigger: ".galleryWrap",
         start: "top 70%",

@@ -25,6 +25,7 @@ function LandingPage() {
                 y: -50,
                 opacity: 0,
                 scale: 0.95,
+                willChange: "transform, opacity",
                 scrollTrigger: {
                     trigger: landingRef.current,
                     start: "top top",
