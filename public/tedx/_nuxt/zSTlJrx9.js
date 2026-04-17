@@ -1,1 +1,0 @@
-const e=()=>({legacy:!1});export{e as default};

@@ -23,6 +23,7 @@ import Cursor from "./components/Cursor/cursor.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import LandingPageMob from "./components/LandingPage/LandingPageMob.jsx";
 import Menu from "./components/Menu/menu.jsx";
+import CypherPage from "./components/CypherPage/CypherPage.jsx";
 const App = () => {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
@@ -117,6 +118,7 @@ const App = () => {
                 path="/events/:eventName"
                 element={<AsymmetricScrollingGallery />}
               />
+              <Route path="/cypher" element={<CypherPage />} />
             </Routes>
           </Router>
         </div>

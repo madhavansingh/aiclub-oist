@@ -1,0 +1,67 @@
+.cypher-gallery-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.cypher-gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cypher-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+}
+
+.cypher-gallery-item.tall {
+  height: 20rem;
+}
+
+.cypher-gallery-item.medium {
+  height: 14rem;
+}
+
+.cypher-gallery-item.small {
+  height: 10rem;
+}
+
+.cypher-gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.cypher-gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(11, 15, 26, 0.6) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.cypher-gallery-item:hover .cypher-gallery-image {
+  transform: scale(1.05);
+}
+
+.cypher-gallery-item:hover .cypher-gallery-overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .cypher-gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}

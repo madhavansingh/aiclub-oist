@@ -1,5 +1,6 @@
 import "./footerMob.css";
 import React from "react";
+import ContactPage from "../ContactPage/ContactPage";
 // import pageTopArrow from '/pageTopArrow.svg'
 export default function footer() {
   return (
@@ -23,8 +24,9 @@ export default function footer() {
       <div className="mob_footCont1">
         <div className="mob_dotLayer"></div>
         <div className="mob_quoteLayer">Where Ideas Spark and vision ignites</div>
-        <h1>AI CLUB OIST</h1>
+        <h1>AI CLUB</h1>
       </div>
+      <ContactPage />
       <div className="mob_footCont2">
         <div className="mob_foot2cont1">&copy; 2024 AI Club - OIST Bhopal</div>
         <div className="mob_foot2cont2">

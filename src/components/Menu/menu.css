@@ -195,7 +195,24 @@
   width: calc(100% + 1.1666666667em);
   height: .1666666667em;
 }
-
+#list8::before{
+    content: "";
+    position: absolute;
+    top: 472px;
+    left: 20px;
+    transform: translateY(-50%);
+    transform-origin: top left;
+    width: .3333333333em;
+    height: .3333333333em;
+    background-color: #dcff46;
+    border-radius: 2px;
+    transition: .3s width, .1s height .2s;
+}
+#list8:hover::before{
+  transition: .3s width .1s, .1s height;
+  width: calc(100% + 1.1666666667em);
+  height: .1666666667em;
+}
 
 /* hamburger */
 /* From Uiverse.io by JulanDeAlb */
@@ -241,4 +258,24 @@
 .hamburger input:checked+svg .line-top-bottom {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42;
+}
+
+.external-menu-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.external-icon {
+  opacity: 0.5;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  margin-top: 4px;
+}
+
+.external-menu-link:hover .external-icon {
+  transform: translate(3px, -3px);
+  opacity: 1;
 }

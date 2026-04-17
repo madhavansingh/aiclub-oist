@@ -1,1 +1,0 @@
-function e(){if(navigator.userAgentData)return navigator.userAgentData.brands.some(a=>a.brand==="Safari");const t=navigator.userAgent;return/Safari/.test(t)&&!/Chrome/.test(t)&&!/Chromium/.test(t)&&!/Edg/.test(t)}function r(){const t=navigator.userAgent.toLowerCase();return t.includes("firefox")&&/android|iphone|ipad|ipod|mobile/.test(t)}export{e as a,r as i};

@@ -61,7 +61,7 @@ const Heropage = () => {
             and meaningful change.
           </p>
 
-          <button className="register-button" onClick={() => { window.location.href = '/tedx/' }} style={{ cursor: 'pointer' }}>Coming Soon</button>
+          <button className="register-button" >Coming Soon</button>
         </div>
 
         <div className="right-event-container">
@@ -70,8 +70,6 @@ const Heropage = () => {
             className="event-image-right"
             src="/HeroSection/aiconic2.webp"
             alt="Technology"
-            onClick={() => { window.location.href = '/tedx/' }}
-            style={{ cursor: 'pointer' }}
           />
           <div className="description">
             TEDx OIST unites bold ideas and future leaders.

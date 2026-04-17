@@ -1,5 +1,6 @@
 import "./footer.css";
 import React from "react";
+import ContactPage from "../ContactPage/ContactPage";
 // import pageTopArrow from '/pageTopArrow.svg'
 export default function footer() {
   return (
@@ -23,8 +24,9 @@ export default function footer() {
       <div className="footCont1">
         <div className="dotLayer"></div>
         <div className="quoteLayer">Where Ideas Spark and vision ignites</div>
-        <h1>AI CLUB OIST</h1>
+        <h1>AI CLUB</h1>
       </div>
+      <ContactPage />
       <div className="footCont2">
         <div className="foot2cont1">&copy; 2026 AI Club - OIST Bhopal</div>
         <div className="foot2cont2">

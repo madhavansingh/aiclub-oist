@@ -25,7 +25,7 @@ function menu() {
                 const menuBody = document.getElementById('menuBody')
                 document.getElementById('menutxt').style.display = 'none'
                 menuBody.style.width = '325px'
-                menuBody.style.height = '550px'
+                menuBody.style.height = '610px'
                 menuBody.style.borderRadius = '20px'
                 menuBody.style.border = "none"
                 document.getElementById('ham').style.top = '4px'
@@ -52,12 +52,22 @@ function menu() {
                 </label>
                 <ul id='menulist' className='menulist'>
                     <li id='list1' onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }) }} >Home</li>
-                    <li id='list2' onClick={() => { window.location.href = '/tedx/' }} >TEDx</li>
+                    <li id='list2'>
+                        <a 
+                            href="https://tedxoist.in" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="external-menu-link"
+                        >
+                            TEDx
+                        </a>
+                    </li>
                     <li id='list3' onClick={() => { document.getElementById('eventSection').scrollIntoView({ behavior: 'smooth' }) }} >Events</li>
                     <li id='list4' onClick={() => { document.getElementById('galleryWrap').scrollIntoView({ behavior: 'smooth' }) }} >Gallery</li>
                     <li id='list5' onClick={() => { document.getElementById('projectCover').scrollIntoView({ behavior: 'smooth' }) }} >Editions</li>
                     <li id='list6' onClick={() => { document.getElementById('branding').scrollIntoView({ behavior: 'smooth' }) }} >Members</li>
                     <li id='list7' onClick={() => { navigate('/magazine') }} >Magazine</li>
+                    <li id='list8' onClick={() => { navigate('/cypher') }} >Cypher 30</li>
                 </ul>
             </div>
         </div>
