@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./BlogPage.css";
 import BackButton from "../backButton/backButton";
 import Cursor from "../Cursor/cursor.jsx";
-import blogs from "../../data/blogs";
+import blogs from "../../Data/blogs.js";
 
 const formatDate = (value) =>
   new Date(value).toLocaleDateString("en-IN", {
