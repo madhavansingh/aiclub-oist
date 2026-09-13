@@ -213,6 +213,24 @@
   width: calc(100% + 1.1666666667em);
   height: .1666666667em;
 }
+#list9::before{
+    content: "";
+    position: absolute;
+    top: 522px;
+    left: 20px;
+    transform: translateY(-50%);
+    transform-origin: top left;
+    width: .3333333333em;
+    height: .3333333333em;
+    background-color: #dcff46;
+    border-radius: 2px;
+    transition: .3s width, .1s height .2s;
+}
+#list9:hover::before{
+  transition: .3s width .1s, .1s height;
+  width: calc(100% + 1.1666666667em);
+  height: .1666666667em;
+}
 
 /* hamburger */
 /* From Uiverse.io by JulanDeAlb */
