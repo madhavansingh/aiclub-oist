@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "./Box";
 import "./BoxGrid.css";
-// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-import Cursor from "../Cursor/cursor";
 import BackButton from "../backButton/backButton";
 const BoxGrid = () => {
   const [boxes, setBoxes] = useState([]);
@@ -44,9 +42,7 @@ const BoxGrid = () => {
 
   return (
     <>
-      {/* <GooeyCursor /> */}
       <BackButton textDisplay={true} top="10px" filter='invert(1)' ></BackButton>
-      <Cursor></Cursor>
       <h1 id="galleryHeading" >Select Event for Gallery</h1>
       <div
         className="grid-container"

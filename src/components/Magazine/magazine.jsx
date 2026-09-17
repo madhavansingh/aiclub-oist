@@ -6,7 +6,6 @@ import pdf3 from "/Magazines/AIC_Edition3.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "./magazine.css";
 import backBut from '../../assets/backBut.webp';
-import Cursor from "../Cursor/cursor";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -180,7 +179,6 @@ function Flipbook() {
 
   return (
     <>
-      <Cursor />
       <BackButton data='Visit Main Site' top="10px" textDisplay={true} filter='invert(1)' />
       <div className="magazine-wrapper">
         <div className="nav-bar">

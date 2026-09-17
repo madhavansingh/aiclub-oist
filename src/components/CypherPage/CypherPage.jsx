@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './CypherPage.css';
 import BackButton from '../backButton/backButton';
-import Cursor from "../Cursor/cursor.jsx";
 import CypherGallery from './CypherGallery';
 
 const images1 = [
@@ -31,7 +30,6 @@ const CypherPage = () => {
 
   return (
     <>
-      <Cursor />
       <BackButton textDisplay={true} filter="invert(1)" />
       <div className='cypherWrap'>
         <h1 className='cypherTitle'>Cypher 30</h1>

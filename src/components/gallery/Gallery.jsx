@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./Gallery.css";
 import { useParams } from "react-router-dom";
-// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-import Cursor from "../Cursor/cursor";
 import BackButton from "../backButton/backButton";
 
 export default function AsymmetricScrollingGallery() {
@@ -52,9 +50,7 @@ export default function AsymmetricScrollingGallery() {
 
   return (
     <>
-      {/* <GooeyCursor /> */}
       <BackButton textDisplay={true} top="10px" filter='invert(1)' ></BackButton>
-      <Cursor></Cursor>
       <div id="galleryContainer" className="gallery-container">
         <h1 className="gallery-title">
           {eventName

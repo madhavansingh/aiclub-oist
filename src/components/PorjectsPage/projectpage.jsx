@@ -5,8 +5,6 @@ import cityScapes from '/projects/cityscapes.webp'
 import agroAI from '/projects/agroAI.webp'
 
 import BackButton from '../backButton/backButton';
-// import GooeyCursor from "../Gooey Cursor/gooeyCursor.jsx";
-import Cursor from "../Cursor/cursor.jsx";
 function projectpage() {
   const [blurLayerHeight, setblurLayerHeight] = useState(0)
   useEffect(() => {
@@ -69,8 +67,6 @@ function projectpage() {
 
   return (
     <>
-      <Cursor></Cursor>
-      {/* <GooeyCursor /> */}
       <BackButton textDisplay={true} filter="invert(1)" ></BackButton>
       <div id='projectWrap' className='Projectwholepage'>
         <div id='blurLayer' className="blurLayer" style={{ height: `${blurLayerHeight}px` }}></div>

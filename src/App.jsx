@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { useLenis } from "@studio-freight/react-lenis";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Loader from "./components/Loader/loader.jsx";
 import Proj from "./components/ProjectSection/project";
 import PorjectsPage from "./components/PorjectsPage/projectpage";
@@ -26,11 +28,42 @@ import Menu from "./components/Menu/menu.jsx";
 import CypherPage from "./components/CypherPage/CypherPage.jsx";
 import BlogPage from "./components/BlogPage/BlogPage.jsx";
 import BlogPost from "./components/BlogPage/BlogPost.jsx";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  const lenis = useLenis();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true });
+    }
+  }, [pathname, lenis]);
+
+  return null;
+};
+
 const App = () => {
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
   const [loading, setLoading] = useState(true);
   const mainContentRef = useRef(null);
+  const lenis = useLenis();
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.ticker.lagSmoothing(0);
+
+    if (!lenis) return;
+    const handleScroll = () => {
+      ScrollTrigger.update();
+    };
+    lenis.on("scroll", handleScroll);
+
+    return () => {
+      lenis.off("scroll", handleScroll);
+    };
+  }, [lenis]);
 
   useEffect(() => {
     var lastWidth = window.innerWidth;
@@ -90,12 +123,13 @@ const App = () => {
           style={{ opacity: 0, transition: "opacity 0.1s ease-in-out" }}
         >
           <Router>
+            <ScrollToTop />
+            {isMobile ? null : <Cursor />}
             <Routes>
               <Route
                 path="/"
                 element={
                   <>
-                    {isMobile ? "" : <Cursor />}
                     <Scroller />
                     <Menu />
                     {isMobile ? <LandingPageMob /> : <LandingPage />}

@@ -8,27 +8,30 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const scroller = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
-    const winH = document.body.offsetHeight;
     gsap.to(".scrollerbox2", {
       y: 0,
+      ease: "none",
+      willChange: "transform",
       scrollTrigger: {
-        trigger: ".scrollerbox2",
+        trigger: "body",
         scroller: "body",
-        start: "top 85%",
-        end: `top -${winH*2.5}px`,
+        start: "top top",
+        end: "bottom bottom",
         markers: false,
-        scrub: 2,
+        scrub: 0.8,
       },
     });
     gsap.to(".ring", {
       rotate: 2080,
+      ease: "none",
+      willChange: "transform",
       scrollTrigger: {
-        trigger: ".scrollerbox2",
+        trigger: "body",
         scroller: "body",
-        start: "top 85%",
-        end: `top -${winH*3}px`, // or -(winH*.4) if needed
+        start: "top top",
+        end: "bottom bottom",
         markers: false,
-        scrub: 2,
+        scrub: 0.8,
       },
     });
   });

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { useLenis } from "@studio-freight/react-lenis";
 import "./BlogPage.css";
 import BackButton from "../backButton/backButton";
-import Cursor from "../Cursor/cursor.jsx";
 import blogs from "../../Data/blogs.js";
 
 const formatDate = (value) =>
@@ -15,16 +15,19 @@ const formatDate = (value) =>
 const BlogPost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
+  const lenis = useLenis();
   const post = blogs.find((item) => item.slug === slug);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [slug]);
+    window.scrollTo(0, 0);
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true });
+    }
+  }, [slug, lenis]);
 
   if (!post) {
     return (
       <>
-        <Cursor />
         <BackButton textDisplay={true} filter="invert(1)" />
         <div className="blog-wrap">
           <div className="blog-hero">
@@ -41,7 +44,6 @@ const BlogPost = () => {
 
   return (
     <>
-      <Cursor />
       <BackButton textDisplay={true} filter="invert(1)" />
       <div className="blog-wrap">
         <article className="blog-post">

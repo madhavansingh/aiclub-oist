@@ -1,197 +1,134 @@
-import { useEffect, useState } from "react";
+import React, { useRef } from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./team.css";
 import leadsData from "../../Data/leads.json";
-import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useGSAP = (animationCallback) => {
-  useEffect(() => {
-    animationCallback();
-  }, [animationCallback]);
-};
-
 const BrandingSection = () => {
-  const [data, setData] = useState([]);
+  const containerRef = useRef(null);
+  const data = leadsData;
 
-  useEffect(() => {
-  setData(leadsData);
-}, []);
+  useGSAP(
+    () => {
+      gsap.utils.toArray("#brand_col .left li").forEach((section) => {
+        gsap.fromTo(
+          section,
+          { autoAlpha: 1, y: 50, rotation: 0, x: 0 },
+          {
+            autoAlpha: 1,
+            y: -20,
+            x: -30,
+            rotation: -10,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 50%",
+              end: "bottom 0%",
+              scrub: 1,
+              toggleActions: "play reverse play reverse",
+            },
+          }
+        );
+      });
 
-  useEffect(() => {
-    if (data.length > 0) {
-      animateSections();
-    }
-  }, [data]);
+      gsap.utils.toArray("#brand_col .center li").forEach((section) => {
+        gsap.fromTo(
+          section,
+          { autoAlpha: 1, y: 50 },
+          {
+            autoAlpha: 1,
+            y: -50,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 60%",
+              end: "bottom 0%",
+              scrub: 1,
+              toggleActions: "play reverse play reverse",
+            },
+          }
+        );
+      });
 
-  const animateSections = () => {
-    gsap.utils.toArray("#brand_col .left li").forEach((section) => {
-      gsap.fromTo(
-        section,
-        { autoAlpha: 1, y: 50, rotation: 0, x: 0 },
-        {
-          autoAlpha: 1,
-          y: -20,
-          x: -30,
-          rotation: -10,
-          scrollTrigger: {
-            trigger: section,
-            start: "top 50%",
-            end: "bottom 0%",
-            scrub: 1,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
+      gsap.utils.toArray("#brand_col .right li").forEach((section) => {
+        gsap.fromTo(
+          section,
+          { autoAlpha: 1, y: 50, rotation: 0 },
+          {
+            autoAlpha: 1,
+            y: -10,
+            x: 10,
+            rotation: 10,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 50%",
+              end: "bottom 0%",
+              scrub: 1,
+              toggleActions: "play reverse play reverse",
+            },
+          }
+        );
+      });
+    },
+    { scope: containerRef }
+  );
 
-    gsap.utils.toArray("#brand_col .center li").forEach((section) => {
-      gsap.fromTo(
-        section,
-        { autoAlpha: 1, y: 50 },
-        {
-          autoAlpha: 1,
-          y: -50,
-          scrollTrigger: {
-            // markers:true,
-            trigger: section,
-            start: "top 60%",
-            end: "bottom 0%",
-            scrub: 1,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
-
-    gsap.utils.toArray("#brand_col .right li").forEach((section) => {
-      gsap.fromTo(
-        section,
-        { autoAlpha: 1, y: 50, rotation: 0 },
-        {
-          autoAlpha: 1,
-          y: -10,
-          x: 10,
-          rotation: 10,
-          scrollTrigger: {
-            trigger: section,
-            start: "top 50%",
-            end: "bottom 0%",
-            scrub: 1,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-    });
-
-    //   const faculty1 = document.querySelector(".faculty1");
-    //   if (faculty1) {
-    //     gsap.fromTo(
-    //       faculty1,
-    //       { autoAlpha: 1, y: -50 },
-    //       {
-    //         autoAlpha: 1,
-    //         opacity: 1,
-    //         y: 20,
-    //         scrollTrigger: {
-    //           trigger: faculty1,
-    //           start: "top 70%",
-    //           end: "bottom 0%",
-    //           scrub: 2,
-    //           toggleActions: "play reverse play reverse",
-    //         },
-    //       }
-    //     );
-    //   }
-
-    //   const faculty2 = document.querySelector(".faculty2");
-    //   if (faculty2) {
-    //     gsap.fromTo(
-    //       faculty2,
-    //       { autoAlpha: 1, y: -50 },
-    //       {
-    //         autoAlpha: 1,
-    //         opacity: 1,
-    //         y: 20,
-    //         scrollTrigger: {
-    //           trigger: faculty2,
-    //           start: "top 70%",
-    //           end: "bottom 0%",
-    //           scrub: 2,
-    //           toggleActions: "play reverse play reverse",
-    //         },
-    //       }
-    //     );
-    //   }
+  const handleItemEnter = (name) => {
+    const cursor = document.getElementById("webCursor");
+    if (!cursor) return;
+    cursor.style.width = "auto";
+    cursor.style.height = "auto";
+    cursor.style.padding = "8px 12px";
+    cursor.innerText = `View ${name}'s Profile`;
   };
 
-  useGSAP(() => {
-    animateSections();
-  });
-
-  useEffect(() => {
-  const items = document.querySelectorAll("#brand_col li");
-
-  items.forEach((item) => {
-    item.addEventListener("mouseenter", () => {
-      const cursor = document.getElementById("webCursor");
-      cursor.style.width = "auto";
-      cursor.style.height = "auto";
-      cursor.style.padding = "8px";
-      const name = item.querySelector("h3").innerText.split(" ")[0];
-cursor.innerText = `View ${name}'s Profile`;
-    });
-
-    item.addEventListener("mouseleave", () => {
-      const cursor = document.getElementById("webCursor");
-      cursor.style.width = "20px";
-      cursor.style.height = "20px";
-      cursor.innerText = "";
-    });
-  });
-}, [data]);
+  const handleItemLeave = () => {
+    const cursor = document.getElementById("webCursor");
+    if (!cursor) return;
+    cursor.style.width = "20px";
+    cursor.style.height = "20px";
+    cursor.style.padding = "";
+    cursor.innerText = "";
+  };
 
   const renderListItems = (items) => {
-  return items.map((item, index) => (
-    <a
-      href={item.profileLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{ textDecoration: "none" }}
-      key={index}
-    >
-      <li id={`view${item.team}`}>
-        <div>
-          <h3>{item.name}</h3>
-        </div>
-        <picture>
-          <img loading="lazy" decoding="async" alt="" src={item.img} />
-        </picture>
-        <div>
-          <span>{item.teamPos}</span>
-        </div>
-      </li>
-    </a>
-  ));
-};
+    return items.map((item, index) => (
+      <a
+        href={item.profileLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ textDecoration: "none" }}
+        key={index}
+      >
+        <li
+          id={`view${item.team}`}
+          onMouseEnter={() => handleItemEnter(item.name.split(" ")[0])}
+          onMouseLeave={handleItemLeave}
+        >
+          <div>
+            <h3>{item.name}</h3>
+          </div>
+          <picture>
+            <img loading="lazy" decoding="async" alt="" src={item.img} />
+          </picture>
+          <div>
+            <span>{item.teamPos}</span>
+          </div>
+        </li>
+      </a>
+    ));
+  };
 
   return (
-    <div id="branding">
+    <div id="branding" ref={containerRef}>
       <div className="meetteam">MEET OUR TEAM</div>
       <div className="faculty">
-        {/* <div className="faculty1">
-          <img src="src/assets/faculty.webp" alt="Teacher 1" />
-          <div className="designation">
-            Teacher 1<br />
-            Designation
-          </div>
-        </div> */}
         <div className="faculty2">
           <img src="/membersIMG/hod.webp" alt="Teacher" />
           <div className="designation">
-            Sreeja Nair<br />
+            Sreeja Nair
+            <br />
             HOD, AIML Department
           </div>
         </div>
@@ -199,8 +136,8 @@ cursor.innerText = `View ${name}'s Profile`;
 
       <div id="brand_col">
         <ul className="left">{renderListItems(data.slice(0, 7))}</ul>
-<ul className="center">{renderListItems(data.slice(7, 14))}</ul>
-<ul className="right">{renderListItems(data.slice(14, 21))}</ul>
+        <ul className="center">{renderListItems(data.slice(7, 14))}</ul>
+        <ul className="right">{renderListItems(data.slice(14, 21))}</ul>
       </div>
     </div>
   );

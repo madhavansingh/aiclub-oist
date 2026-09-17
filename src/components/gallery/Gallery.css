@@ -3,7 +3,6 @@
   background-color:#131315; 
   min-height: 100vh;
   padding: 1rem;
-  background-attachment: fixed;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
 }

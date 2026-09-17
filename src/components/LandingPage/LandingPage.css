@@ -44,7 +44,6 @@
   position: relative;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
 }
 
 .box1row1>img {
@@ -78,7 +77,6 @@
   word-spacing: 5px;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
   contain: content;
 }
 
@@ -114,7 +112,6 @@
   background-color: #f1f1f1;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,7 +153,6 @@
   font-weight: 400;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
 }
 
 .box1row3main>span {
@@ -173,7 +169,6 @@
   position: relative;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
 }
 
 .box1row3side::before {
@@ -209,7 +204,6 @@
   word-spacing: 5px;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
   font-weight: 700;
 }
 
@@ -228,7 +222,6 @@
   background-color: #f1f1f1;
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed;
 }
 
 .box2row2col1>img {
@@ -243,7 +236,6 @@
   background-image: radial-gradient(circle, #383c3d36 2px, transparent 1px);
   background-size: 20px 20px;
   position: relative;
-  background-attachment: fixed;
 }
 
 .box2row2col2::before {

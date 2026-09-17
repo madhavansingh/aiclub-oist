@@ -5,9 +5,10 @@ import './index.css'
 import { ReactLenis } from "@studio-freight/react-lenis";
 const lenisOptions = {
   lerp: 0.1,
-  duration: 1.5,
+  duration: 1.2,
   smoothWheel: true,
   smoothTouch: false,
+  wheelMultiplier: 1.0,
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

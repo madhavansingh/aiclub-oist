@@ -1,10 +1,16 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import blogs from "../../Data/blogs.js";
 import "./herosection.css";
+
 const Heropage = () => {
+  const navigate = useNavigate();
+  const featuredBlog = blogs && blogs.length > 0 ? blogs[0] : null;
+
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.to(".highlight-bg", {
@@ -15,64 +21,98 @@ const Heropage = () => {
         scroller: "body",
         start: "top 70%",
         end: "bottom",
-        // markers:true
       },
     });
   });
+
   useEffect(() => {
-    document.getElementById('heroWrap').addEventListener('mouseenter', () => {
-      document.getElementById('webCursor').style.width = 'auto'
-      document.getElementById('webCursor').style.height = 'auto'
-      document.getElementById('webCursor').style.padding = '8px'
-      document.getElementById('webCursor').innerText = 'Upcoming Events'
-    })
-    document.getElementById('heroWrap').addEventListener('mouseleave', () => {
-      document.getElementById('webCursor').style.width = '20px'
-      document.getElementById('webCursor').style.height = '20px'
-      document.getElementById('webCursor').innerText = ''
-    })
-  }, [])
+    const heroWrap = document.getElementById("heroWrap");
+    const webCursor = document.getElementById("webCursor");
+    if (!heroWrap || !webCursor) return;
+
+    const handleMouseEnter = () => {
+      webCursor.style.width = "auto";
+      webCursor.style.height = "auto";
+      webCursor.style.padding = "8px 14px";
+      webCursor.innerText = "Read Blog";
+    };
+
+    const handleMouseLeave = () => {
+      webCursor.style.width = "20px";
+      webCursor.style.height = "20px";
+      webCursor.style.padding = "";
+      webCursor.innerText = "";
+    };
+
+    heroWrap.addEventListener("mouseenter", handleMouseEnter);
+    heroWrap.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      heroWrap.removeEventListener("mouseenter", handleMouseEnter);
+      heroWrap.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
 
   return (
     <div id="heroWrap" className="heroWrap">
       <div className="event-container">
         <div className="left-event-container">
-          {/* <div className="eventTitle heroTitle">/Upcoming Event</div> */}
           <p className="context">
+            Explore our latest{" "}
             <span className="highlight">
               <span className="highlight-bg"></span>
-              <span className="highContent">TEDx</span>
-            </span>
-            is coming to
+              <span className="highContent">blogs,</span>
+            </span>{" "}
+            stories and{" "}
             <span className="highlight">
               <span className="highlight-bg"></span>
-              <span className="highContent">  OIST</span>
-            </span>
-            bringing visionary
+              <span className="highContent">insights</span>
+            </span>{" "}
+            on AI, technology,{" "}
             <span className="highlight">
               <span className="highlight-bg"></span>
-              <span className="highContent">  speakers</span>
-            </span>
-            powerful ideas and inspiring stories that spark
+              <span className="highContent">innovation</span>
+            </span>{" "}
+            and the{" "}
             <span className="highlight">
               <span className="highlight-bg"></span>
-              <span className="highContent"> innovation</span>
+              <span className="highContent">future.</span>
             </span>
-            and meaningful change.
           </p>
 
-          <button className="register-button" >Coming Soon</button>
+          <button
+            className="register-button"
+            onClick={() => {
+              const target = featuredBlog ? `/blog/${featuredBlog.slug}` : "/blog";
+              navigate(target);
+            }}
+            aria-label="Read AI Club Blog"
+          >
+            Read Blog
+          </button>
         </div>
 
-        <div className="right-event-container">
-          <h1 className="heading">TEDx OIST</h1>
+        <div
+          className="right-event-container"
+          onClick={() =>
+            navigate(featuredBlog ? `/blog/${featuredBlog.slug}` : "/blog")
+          }
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              navigate(featuredBlog ? `/blog/${featuredBlog.slug}` : "/blog");
+            }
+          }}
+        >
+          <h1 className="heading">AI BLOG</h1>
           <img
             className="event-image-right"
-            src="/HeroSection/aiconic2.webp"
-            alt="Technology"
+            src={featuredBlog?.cover || "/blog/ai-blog-cover.png"}
+            alt={featuredBlog?.title || "AI Club OIST Blog"}
           />
           <div className="description">
-            TEDx OIST unites bold ideas and future leaders.
+            {featuredBlog?.title || "Weekly notes and deep dives from AI Club OIST."}
           </div>
         </div>
       </div>
@@ -81,3 +121,4 @@ const Heropage = () => {
 };
 
 export default Heropage;
+
