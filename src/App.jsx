@@ -20,8 +20,6 @@ import FooterMobile from "./components/FooterMobile/footermobile";
 import BoxGrid from "./components/gallery/BoxGrid.jsx";
 import AsymmetricScrollingGallery from "./components/gallery/Gallery.jsx";
 import Scroller from "./components/Scroller/scroller.jsx";
-import MoreEvents from "./components/MoreEvents/moreEvents.jsx";
-import Cursor from "./components/Cursor/cursor.jsx";
 import LandingPage from "./components/LandingPage/LandingPage.jsx";
 import LandingPageMob from "./components/LandingPage/LandingPageMob.jsx";
 import Menu from "./components/Menu/menu.jsx";
@@ -124,7 +122,6 @@ const App = () => {
         >
           <Router>
             <ScrollToTop />
-            {isMobile ? null : <Cursor />}
             <Routes>
               <Route
                 path="/"
@@ -146,14 +143,14 @@ const App = () => {
                   </>
                 }
               />
-              <Route path="/events" element={<MoreEvents />} />
-              <Route path="/magazine" element={<Magazine />} />
-              <Route path="/projects" element={<PorjectsPage />} />
+              <Route path="/events" element={<BoxGrid />} />
               <Route path="/events-gallery" element={<BoxGrid />} />
               <Route
                 path="/events/:eventName"
                 element={<AsymmetricScrollingGallery />}
               />
+              <Route path="/magazine" element={<Magazine />} />
+              <Route path="/projects" element={<PorjectsPage />} />
               <Route path="/cypher" element={<CypherPage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogPost />} />

@@ -74,24 +74,6 @@ const BrandingSection = () => {
     { scope: containerRef }
   );
 
-  const handleItemEnter = (name) => {
-    const cursor = document.getElementById("webCursor");
-    if (!cursor) return;
-    cursor.style.width = "auto";
-    cursor.style.height = "auto";
-    cursor.style.padding = "8px 12px";
-    cursor.innerText = `View ${name}'s Profile`;
-  };
-
-  const handleItemLeave = () => {
-    const cursor = document.getElementById("webCursor");
-    if (!cursor) return;
-    cursor.style.width = "20px";
-    cursor.style.height = "20px";
-    cursor.style.padding = "";
-    cursor.innerText = "";
-  };
-
   const renderListItems = (items) => {
     return items.map((item, index) => (
       <a
@@ -101,11 +83,7 @@ const BrandingSection = () => {
         style={{ textDecoration: "none" }}
         key={index}
       >
-        <li
-          id={`view${item.team}`}
-          onMouseEnter={() => handleItemEnter(item.name.split(" ")[0])}
-          onMouseLeave={handleItemLeave}
-        >
+        <li id={`view${item.team}`}>
           <div>
             <h3>{item.name}</h3>
           </div>

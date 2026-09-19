@@ -65,26 +65,6 @@ const GallerySection = () => {
     navigate("/events-gallery");
   };
 
-  const handleMouseEnter = () => {
-    const cursor = document.getElementById("webCursor");
-    if (cursor) {
-      cursor.style.width = "auto";
-      cursor.style.height = "auto";
-      cursor.style.padding = "8px 12px";
-      cursor.innerText = "Open Gallery";
-    }
-  };
-
-  const handleMouseLeave = () => {
-    const cursor = document.getElementById("webCursor");
-    if (cursor) {
-      cursor.style.width = "20px";
-      cursor.style.height = "20px";
-      cursor.style.padding = "";
-      cursor.innerText = "";
-    }
-  };
-
   return (
     <div id="galleryWrap" className="galleryWrap pin-spacer">
       <div className="eventTitle galleryTitle">Gallery</div>
@@ -93,8 +73,6 @@ const GallerySection = () => {
         <div
           id="galleryBox1"
           onClick={handleBoxClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="boximg1"
           style={{
             backgroundImage:`url('/gallerysection/IMG_6499.webp')`,
@@ -108,8 +86,6 @@ const GallerySection = () => {
         <div
           id="galleryBox2"
           onClick={handleBoxClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="boximg1"
           style={{
             backgroundImage:`url('/gallerysection/IMG_6502.webp')`,
@@ -121,8 +97,6 @@ const GallerySection = () => {
           id="galleryCenterBox"
           className="boximg2"
           onClick={handleBoxClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           style={{
             backgroundImage:`url('/gallerysection/IMG_6503.webp')`,
             backgroundSize: "cover",
@@ -132,8 +106,6 @@ const GallerySection = () => {
         <div
           id="galleryBox3"
           onClick={handleBoxClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="boximg3"
           style={{
             backgroundImage:`url('/gallerysection/IMG_6500.webp')`,
@@ -146,8 +118,6 @@ const GallerySection = () => {
         <div
           id="galleryBox4"
           onClick={handleBoxClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="boximg1"
           style={{
             backgroundImage:`url('/gallerysection/IMG_6504.webp')`,
@@ -158,8 +128,6 @@ const GallerySection = () => {
         <div
           id="galleryBox5"
           onClick={handleBoxClick}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="boximg2"
           style={{
             backgroundImage:`url('/gallerysection/IMG_6501.webp')`,

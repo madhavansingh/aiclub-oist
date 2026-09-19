@@ -14,52 +14,6 @@ function projectpage() {
     window.addEventListener('load', () => {
       setblurLayerHeight(document.getElementById("projectWrap").clientHeight)
     })
-    document.getElementById('projectWrap').addEventListener('mouseenter', () => {
-      document.getElementById('projBox1').addEventListener('mouseenter', () => {
-        document.getElementById('webCursor').style.width = 'auto'
-        document.getElementById('webCursor').style.height = 'auto'
-        document.getElementById('webCursor').style.padding = '8px'
-        document.getElementById('webCursor').innerText = 'Read the Edition'
-      })
-      document.getElementById('projBox1').addEventListener('mouseleave', () => {
-        document.getElementById('webCursor').style.width = '20px'
-        document.getElementById('webCursor').style.height = '20px'
-        document.getElementById('webCursor').innerText = ''
-      })
-      document.getElementById('projBox2').addEventListener('mouseenter', () => {
-        document.getElementById('webCursor').style.width = 'auto'
-        document.getElementById('webCursor').style.height = 'auto'
-        document.getElementById('webCursor').style.padding = '8px'
-        document.getElementById('webCursor').innerText = 'Read the Edition'
-      })
-      document.getElementById('projBox2').addEventListener('mouseleave', () => {
-        document.getElementById('webCursor').style.width = '20px'
-        document.getElementById('webCursor').style.height = '20px'
-        document.getElementById('webCursor').innerText = ''
-      })
-      document.getElementById('projBox3').addEventListener('mouseenter', () => {
-        document.getElementById('webCursor').style.width = 'auto'
-        document.getElementById('webCursor').style.height = 'auto'
-        document.getElementById('webCursor').style.padding = '8px'
-        document.getElementById('webCursor').innerText = 'Read the Edition'
-      })
-      document.getElementById('projBox3').addEventListener('mouseleave', () => {
-        document.getElementById('webCursor').style.width = '20px'
-        document.getElementById('webCursor').style.height = '20px'
-        document.getElementById('webCursor').innerText = ''
-      })
-      document.getElementById('projBox4').addEventListener('mouseenter', () => {
-        document.getElementById('webCursor').style.width = 'auto'
-        document.getElementById('webCursor').style.height = 'auto'
-        document.getElementById('webCursor').style.padding = '8px'
-        document.getElementById('webCursor').innerText = 'Read the Edition'
-      })
-      document.getElementById('projBox4').addEventListener('mouseleave', () => {
-        document.getElementById('webCursor').style.width = '20px'
-        document.getElementById('webCursor').style.height = '20px'
-        document.getElementById('webCursor').innerText = ''
-      })
-    })
     scrollTo({ top: 0, behavior: "smooth" })
     document.getElementById('blurLayer').style.backgroundImage = 'radial-gradient(circle, #383c3d7d 2px, transparent 1px)'
     document.getElementById('blurLayer').style.backgroundSize = '20px 20px'

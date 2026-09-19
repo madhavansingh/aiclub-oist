@@ -43,37 +43,9 @@ const ProjectsSection = () => {
         });
     });
 
-    const handleMagEnter = () => {
-        const cursor = document.getElementById('webCursor');
-        if (!cursor) return;
-        cursor.style.width = 'auto';
-        cursor.style.height = 'auto';
-        cursor.style.padding = '8px 12px';
-        cursor.innerText = 'Explore the Magazine';
-    };
-
-    const handleMagLeave = () => {
-        const cursor = document.getElementById('webCursor');
-        if (!cursor) return;
-        cursor.style.width = '20px';
-        cursor.style.height = '20px';
-        cursor.style.padding = '';
-        cursor.innerText = '';
-    };
     return (
         <div id="projectCover" className="projectCover">
             <div className="projectPage">
-                {/* <div
-                    className="eventTitle"
-                    style={{
-                        position: "absolute",
-                        top: "90px",
-                        left: "120px",
-                        color: isDark ? "white" : "black",
-                    }}
-                >
-                    /Projects
-                </div> */}
                 <div
                     className="ghost"
                     style={{
@@ -90,8 +62,6 @@ const ProjectsSection = () => {
                     id="projectCont1"
                     className="container1"
                     onClick={() => { navigate('/projects') }}
-                    onMouseEnter={handleMagEnter}
-                    onMouseLeave={handleMagLeave}
                 >
                     <div className="projImg">
                         <div className="projMedia"></div>
@@ -107,8 +77,6 @@ const ProjectsSection = () => {
                     id="projectCont2"
                     className="container2"
                     onClick={() => { navigate('/projects') }}
-                    onMouseEnter={handleMagEnter}
-                    onMouseLeave={handleMagLeave}
                 >
                     <div className="projImg">
                         <div className="projMedia"></div>
@@ -124,8 +92,6 @@ const ProjectsSection = () => {
                     id="projectCont3"
                     className="container3"
                     onClick={() => { navigate('/projects') }}
-                    onMouseEnter={handleMagEnter}
-                    onMouseLeave={handleMagLeave}
                 >
                     <div className="projImg">
                         <div className="projMedia"></div>

@@ -9,15 +9,19 @@
   font-weight: 300;
   border-radius: 25px;
   font-family: inter;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   background-repeat: round;
   background-blend-mode: multiply;
   position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
 }
 
-
-.box:hover {
+.box:hover,
+.box:focus-visible {
   background-color: #6eff5e;
+  transform: translateY(-4px);
 }
 
 /* .box:nth-child(6) {

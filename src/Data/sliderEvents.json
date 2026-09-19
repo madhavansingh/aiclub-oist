@@ -1,6 +1,7 @@
 {
     "1": {
         "name": "Cypher 30",
+        "slug": "cypher-30",
         "keyWords": [
             "Code",
             "Compete",
@@ -10,6 +11,7 @@
     },
     "2": {
         "name": "Web Wizards",
+        "slug": "web-wizards",
         "keyWords": [
             "Build",
             "Design",
@@ -18,7 +20,8 @@
         "bannerPath": "/eventBanners/aicrypt.webp"
     },
     "3": {
-        "name": "TEDx",
+        "name": "TEDx 2024",
+        "slug": "tedx-2024",
         "keyWords": [
             "Ideas",
             "Voices",
@@ -28,6 +31,7 @@
     },
     "4": {
         "name": "Canva Workshop",
+        "slug": "canva-workshop",
         "keyWords": [
             "Design",
             "Create",

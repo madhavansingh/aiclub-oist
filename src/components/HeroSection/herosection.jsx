@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -24,34 +23,6 @@ const Heropage = () => {
       },
     });
   });
-
-  useEffect(() => {
-    const heroWrap = document.getElementById("heroWrap");
-    const webCursor = document.getElementById("webCursor");
-    if (!heroWrap || !webCursor) return;
-
-    const handleMouseEnter = () => {
-      webCursor.style.width = "auto";
-      webCursor.style.height = "auto";
-      webCursor.style.padding = "8px 14px";
-      webCursor.innerText = "Read Blog";
-    };
-
-    const handleMouseLeave = () => {
-      webCursor.style.width = "20px";
-      webCursor.style.height = "20px";
-      webCursor.style.padding = "";
-      webCursor.innerText = "";
-    };
-
-    heroWrap.addEventListener("mouseenter", handleMouseEnter);
-    heroWrap.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      heroWrap.removeEventListener("mouseenter", handleMouseEnter);
-      heroWrap.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, []);
 
   return (
     <div id="heroWrap" className="heroWrap">

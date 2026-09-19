@@ -3,12 +3,27 @@ import "./Gallery.css";
 import { useParams } from "react-router-dom";
 import BackButton from "../backButton/backButton";
 
+const formatEventTitle = (slug) => {
+  if (!slug) return "";
+  return slug
+    .split("-")
+    .map((word) => {
+      const lower = word.toLowerCase();
+      if (lower === "tedx") return "TEDx";
+      if (lower === "ai") return "AI";
+      if (lower === "oist") return "OIST";
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(" ");
+};
+
 export default function AsymmetricScrollingGallery() {
   const leftColumnRef = useRef(null);
   const centerColumnRef = useRef(null);
   const rightColumnRef = useRef(null);
   const { eventName } = useParams();
   const [images, setImages] = useState([]);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Fetch images for the specific event
   useEffect(() => {
@@ -18,7 +33,24 @@ export default function AsymmetricScrollingGallery() {
       .catch((error) => console.error("Error loading images:", error));
   }, [eventName]);
 
-  // Scroll effect code remains the same
+  // Lightbox keyboard and scroll management
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedImage(null);
+      }
+    };
+    if (selectedImage) {
+      window.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [selectedImage]);
 
   const renderColumn = (columnIndex) => {
     if (!images.length) return null;
@@ -32,16 +64,29 @@ export default function AsymmetricScrollingGallery() {
           index % 3 === 0 ? "tall" : index % 3 === 1 ? "small" : "medium";
       }
 
+      const imageSrc = `/eventImg/${eventName}/${image}`;
+
       return (
         <div
           key={`${columnIndex}-${index}`}
           className={`gallery-item ${height}`}
-          aria-label={`Gallery image ${columnIndex * 12 + index + 1}`}
+          role="button"
+          tabIndex={0}
+          aria-label={`View full image ${columnIndex * 12 + index + 1}`}
+          onClick={() => setSelectedImage(imageSrc)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              setSelectedImage(imageSrc);
+            }
+          }}
         >
           <img
-            src={`/eventImg/${eventName}/${image}`} // This is correct
-            alt={`Event image ${index + 1}`}
+            src={imageSrc}
+            alt={`${formatEventTitle(eventName)} photo ${index + 1}`}
             className="gallery-image"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       );
@@ -50,14 +95,9 @@ export default function AsymmetricScrollingGallery() {
 
   return (
     <>
-      <BackButton textDisplay={true} top="10px" filter='invert(1)' ></BackButton>
+      <BackButton textDisplay={true} top="15px" left="20px" filter="invert(1)" />
       <div id="galleryContainer" className="gallery-container">
-        <h1 className="gallery-title">
-          {eventName
-            .split("-")
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(" ")}
-        </h1>
+        <h1 className="gallery-title">{formatEventTitle(eventName)}</h1>
         <div className="gallery-grid">
           <div ref={leftColumnRef} className="gallery-column">
             {renderColumn(0)}
@@ -70,6 +110,34 @@ export default function AsymmetricScrollingGallery() {
           </div>
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="gallery-lightbox-overlay"
+          onClick={() => setSelectedImage(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image preview"
+        >
+          <button
+            className="gallery-lightbox-close"
+            onClick={() => setSelectedImage(null)}
+            aria-label="Close image preview"
+          >
+            &times;
+          </button>
+          <div
+            className="gallery-lightbox-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={selectedImage}
+              alt="Enlarged view"
+              className="gallery-lightbox-img"
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

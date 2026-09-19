@@ -160,9 +160,6 @@
 
 
 @media (max-width: 850px) {
-  #webCursor{
-    display: none;
-  }
   .Projects{
     font-size: 40px;
   }

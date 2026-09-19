@@ -17,7 +17,6 @@
 }
 
 .slider {
-
   display: flex;
   position: relative;
   gap: 44px;
@@ -25,6 +24,7 @@
   height: 100%;
   transform-style: preserve-3d;
   transform: perspective(1500px) rotateY(-15deg) rotateZ(-6deg) translateX(-25px) translateY(-100px);
+  pointer-events: none;
 }
 
 .cardbox {
@@ -49,6 +49,17 @@
   justify-content: flex-start;
   gap: 20px;
   cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: filter 0.3s ease;
+}
+
+.slider span:hover {
+  filter: brightness(1.08);
+}
+
+.slider span * {
+  pointer-events: none;
 }
 
 .slider span img {
@@ -98,6 +109,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-family: inter;
+  pointer-events: none;
 }
 
 .eventKeyWords {
@@ -130,115 +142,18 @@
   height: 15%;
   display: flex;
   transform: scaleX(-1);
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .eventName {
-
   font-size: 50px;
   font-family: inter;
   letter-spacing: 3px;
+  text-align: center;
 }
-
-.viewEvent {
-  width: 30%;
-}
-
-.viewEvent button {
-  font-family: inter;
-  background-color: transparent;
-  color: white;
-  font-size: 30px;
-  padding: 15px;
-  width: 100%;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 15px;
-  font-weight: 500;
-}
-
-
-/* @media screen and (max-width: 768px) {
-  .eventSection {
-    flex-direction: column;
-    transform: scaleX(-1);
-    height: auto;
-  }
-
-  .slider {
-    flex-direction: column;
-    transform: none;
-    width: 90vw;
-    margin: 0 0 0 12px;
-  }
-
-  .slider span {
-    position: static;
-    width: 100%;
-    height: auto;
-    transform: none;
-  }
-
-  .octa {
-    width: 100%;
-    aspect-ratio: 1;
-    clip-path: none;
-  }
-
-  #bannerImage {
-    border-radius: 50px 20px 50px 20px;
-  }
-
-  .eventTitlex {
-    position: initial;
-    transform: scaleX(-1);
-    font-size: 15px;
-    right: auto;
-    margin: 50px 20px 15px auto;
-    font-weight: 500;
-  }
-
-  .eventKeyWords {
-    top: 0;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .word {
-    font-size: 15px;
-    padding: 5px;
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .cardbox {
-    width: 100%;
-  }
-
-  .eventDetails {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .eventName {
-    font-size: 21px;
-    width: 100%;
-    margin: -10px 0 20px -40px;
-    padding: 0;
-  }
-
-  .viewEvent {
-    width: 50%;
-    margin-left: -40px;
-    padding: 0;
-  }
-
-  .viewEvent button {
-    font-size: 15px;
-    padding: 7px;
-  }
-} */
 
 @media screen and (max-width: 768px) {
   .eventSection {
@@ -257,9 +172,8 @@
     width: 90vw;
     display: flex;
     justify-content: center;
-    /* Centering content */
     align-items: center;
-    /* Centering content */
+    pointer-events: auto;
   }
 
   .slider span {
@@ -328,32 +242,5 @@
     padding: 0;
     text-align: center;
     /* Centering text */
-  }
-
-  .viewEvent {
-    width: 80%;
-    /* Increase width for button */
-    margin-left: 0;
-    /* Adjust to center the button */
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    /* Center the button */
-  }
-
-  .viewEvent button {
-    font-size: 15px;
-    padding: 10px 20px;
-    /* Adjust padding for a larger button */
-    width: 100%;
-    /* Make it take up the full width of its container */
-    text-align: center;
-    /* Ensure button text is centered */
-    white-space: nowrap;
-    /* Prevent text from wrapping */
-    overflow: hidden;
-    /* Hide overflowing text */
-    text-overflow: ellipsis;
-    /* Add ellipsis if the text is too long */
   }
 }
