@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLenis } from "@studio-freight/react-lenis";
 import "./BlogPage.css";
 import BackButton from "../backButton/backButton";
-import blogs from "../../Data/blogs.js";
+import { getBlogs } from "../../services/blogService.js";
 
 const formatDate = (value) =>
   new Date(value).toLocaleDateString("en-IN", {
@@ -15,6 +15,8 @@ const formatDate = (value) =>
 const BlogPage = () => {
   const navigate = useNavigate();
   const lenis = useLenis();
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,9 +25,30 @@ const BlogPage = () => {
     }
   }, [lenis]);
 
-  const posts = [...blogs].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  useEffect(() => {
+    let isMounted = true;
+    async function loadPosts() {
+      try {
+        const res = await getBlogs();
+        if (isMounted && res.success && Array.isArray(res.blogs)) {
+          const sorted = [...res.blogs].sort(
+            (a, b) => new Date(b.date) - new Date(a.date)
+          );
+          setPosts(sorted);
+        }
+      } catch (err) {
+        console.error("Failed to load blogs:", err);
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
+      }
+    }
+    loadPosts();
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <>
@@ -41,12 +64,19 @@ const BlogPage = () => {
         </div>
 
         <div className="blog-list">
-          {posts.map((post) => (
-            <article
-              key={post.slug}
-              className="blog-card"
-              onClick={() => navigate(`/blog/${post.slug}`)}
-            >
+          {loading ? (
+            <div className="blog-card" style={{ padding: "24px" }}>
+              <div className="blog-skeleton-bar" style={{ width: "100%", height: "200px", marginBottom: "16px" }} />
+              <div className="blog-skeleton-bar" style={{ width: "40%", height: "16px", marginBottom: "12px" }} />
+              <div className="blog-skeleton-bar" style={{ width: "80%", height: "24px" }} />
+            </div>
+          ) : (
+            posts.map((post) => (
+              <article
+                key={post.slug}
+                className="blog-card"
+                onClick={() => navigate(`/blog/${post.slug}`)}
+              >
               {post.cover && (
                 <div className="blog-card-cover">
                   <img src={post.cover} alt="" />
@@ -70,7 +100,7 @@ const BlogPage = () => {
                 <span className="blog-read">Read post</span>
               </div>
             </article>
-          ))}
+          )))}
         </div>
       </div>
     </>
