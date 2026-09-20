@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './menu.css'
 import { useNavigate } from "react-router-dom";
-function menu() {
-    var menuOpened = false
+function Menu() {
     const navigate = useNavigate();
     useEffect(() => {
+        let menuOpened = false;
         document.getElementById('ham').addEventListener('click', () => {
             // console.log(menuOpened);
             if (menuOpened) {
@@ -75,5 +75,5 @@ function menu() {
     )
 }
 
-export default menu
+export default Menu;
 

@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const scroller = () => {
+const Scroller = () => {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.to(".scrollerbox2", {
@@ -52,4 +52,4 @@ const scroller = () => {
   );
 };
 
-export default scroller;
+export default Scroller;

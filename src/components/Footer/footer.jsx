@@ -23,7 +23,7 @@ export default function footer() {
       </div>
       <div className="footCont1">
         <div className="dotLayer"></div>
-        <div className="quoteLayer">Where Ideas Spark and vision ignites</div>
+        <div className="quoteLayer">Where Ideas Spark and vision ignites</div>
         <h1>AI CLUB</h1>
       </div>
       <ContactPage />
@@ -32,14 +32,14 @@ export default function footer() {
         <div className="foot2cont2">
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/ai-club-oist-37bbb2301/"
+            href="https://www.linkedin.com/in/ai-club-oist-37bbb2301/" rel="noreferrer"
           >
             LinkedIn
           </a>
-          <a target="_blank" href="https://www.instagram.com/aicluboist?igsh=MWlmMThxbTlyMHlkdw==">
+          <a target="_blank" href="https://www.instagram.com/aicluboist?igsh=MWlmMThxbTlyMHlkdw==" rel="noreferrer">
             Instagram
           </a>
-          <a target="_blank" href="https://github.com/madhavansingh">
+          <a target="_blank" href="https://github.com/madhavansingh" rel="noreferrer">
             Github
           </a>
           <a target="_blank" href="">

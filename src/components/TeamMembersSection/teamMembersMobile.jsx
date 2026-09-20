@@ -2,15 +2,8 @@ import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./team.css";
-import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const useGSAP = (animationCallback) => {
-  useEffect(() => {
-    animationCallback();
-  }, [animationCallback]);
-};
 
 const BrandingSection = () => {
   const [data, setData] = useState([]);

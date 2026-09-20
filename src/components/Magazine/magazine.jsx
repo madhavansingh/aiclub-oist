@@ -29,7 +29,7 @@ function BackButton(props) {
     if (props.data) {
       document.getElementById('backtxt').innerText = props.data;
     }
-  }, []);
+  }, [props.color, props.data, props.filter, props.left, props.textDisplay, props.top]);
 
   return (
     <div onClick={() => window.location.href = '/'} id='backButtonWrap' className='backButtonWrap'>
@@ -41,7 +41,6 @@ function BackButton(props) {
 
 const Pages = React.forwardRef((props, ref) => (
   <div className="demoPage" ref={ref}>
-    {/*eslint-disable-next-line react/prop-types*/}
     {props.children}
   </div>
 ));

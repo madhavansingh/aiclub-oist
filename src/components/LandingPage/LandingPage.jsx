@@ -70,14 +70,14 @@ function LandingPage() {
           </div>
           <div className="box2row2">
             <div className="box2row2col1">
-              <img src="/PublicAssets/robot.webp" alt="" srcset="" />
+              <img src="/PublicAssets/robot.webp" alt="" srcSet="" />
             </div>
             <div className="box2row2col2"></div>
           </div>
         </div>
       </div>
       <div className="landingInfiniteScroll">
-        <div class="landingFooter">
+        <div className="landingFooter">
           TEDx / Projects / Workshops / Webinars / Sessions / Events / Competitions / Exhibitions
         </div>
       </div>

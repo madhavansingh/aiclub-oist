@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./gallerySection.css";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
