@@ -54,7 +54,7 @@ const Heropage = () => {
           <button
             className="register-button"
             onClick={() => {
-              const target = featuredBlog ? `/blog/${featuredBlog.slug}` : "/blog";
+              const target = featuredBlog ? `/blog/` : "/blog";
               navigate(target);
             }}
             aria-label="Read AI Club Blog"
