@@ -148,10 +148,14 @@ function normalizeBlog(raw) {
 
 /**
  * Fetches all published blogs.
- * Queries Supabase when configured, otherwise falls back gracefully to local blogs.
+ * Queries Supabase when configured and seamlessly merges with any local blogs
+ * that have not yet been synced to the database, ensuring newly added posts
+ * always appear immediately in deployment.
  * @returns {Promise<{ success: boolean, blogs: Array, isFallback?: boolean, error?: string }>}
  */
 export async function getBlogs() {
+  const localList = localBlogs.map(normalizeBlog);
+
   if (isSupabaseConfigured && supabase) {
     try {
       const { data, error } = await supabase
@@ -160,13 +164,23 @@ export async function getBlogs() {
         .eq('status', 'published')
         .order('published_at', { ascending: false });
 
-      if (!error && Array.isArray(data) && data.length > 0) {
+      if (!error && Array.isArray(data)) {
         data.forEach((b) => {
           if (b.slug && b.id) slugToIdCache.set(b.slug, b.id);
         });
+
+        const dbBlogs = data.map(normalizeBlog);
+        const dbSlugs = new Set(dbBlogs.map((b) => b.slug));
+
+        // Merge any local blogs whose slugs aren't in Supabase yet
+        const missingFromDb = localList.filter((b) => !dbSlugs.has(b.slug));
+        const combined = [...dbBlogs, ...missingFromDb].sort(
+          (a, b) => new Date(b.date) - new Date(a.date)
+        );
+
         return {
           success: true,
-          blogs: data.map(normalizeBlog),
+          blogs: combined,
         };
       }
     } catch {
@@ -175,10 +189,9 @@ export async function getBlogs() {
   }
 
   // Graceful local data fallback
-  const fallback = localBlogs.map(normalizeBlog);
   return {
     success: true,
-    blogs: fallback,
+    blogs: localList,
     isFallback: true,
   };
 }
