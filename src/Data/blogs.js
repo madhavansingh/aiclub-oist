@@ -5,6 +5,70 @@
 const blogs = [
 
   {
+  slug: "ai-is-finally-learning-to-speak-bharat",
+  title: "🇮🇳 AI Is Finally Learning to Speak Bharat 🤖",
+  date: "2026-09-29",
+  author: "AI Club, OIST",
+  tags: ["AI", "Indian AI", "Voice AI", "AI Agents"],
+  excerpt:
+    "India's next AI revolution may not speak only English. From regional-language education to voice-based healthcare and AI agents, Indian AI is increasingly being built around the way Bharat communicates.",
+  cover: "/blog/ai-blog-cover.png",
+  content: [
+
+    "🇮🇳 AI Is Finally Learning to Speak Bharat 🤖",
+
+    "The next AI revolution may not speak only English.",
+
+    "India is home to hundreds of languages and millions of people who are more comfortable communicating in their regional language. Now, Indian AI is increasingly being built around this reality.",
+
+    "🗣️ AI That Understands Indian Languages",
+
+    "Sarvam AI's Saaras V4 is a speech model reported to support transcription across 22 Indian languages.",
+
+    "This opens exciting possibilities for:",
+
+    "🏫 Regional-language education",
+
+    "🏥 Voice-based healthcare access",
+
+    "🏛️ Multilingual government services",
+
+    "🌾 Agricultural assistance",
+
+    "📱 Easier digital experiences",
+
+    "Instead of typing complicated commands, imagine simply speaking to an AI in the language you naturally use.",
+
+    "🤖 From Chatbots to AI Agents",
+
+    "AI is also moving beyond simply answering questions.",
+
+    "The emerging model is:",
+
+    "🎙️ Listen → 🧠 Understand → ⚙️ Reason → 🤖 Act",
+
+    "Tomorrow's AI may not just tell you how to do something — it could use connected tools to help get it done.",
+
+    "🎓 What Does This Mean for Students?",
+
+    "For AI/ML students, the opportunity is huge.",
+
+    "Don't just build another chatbot.",
+
+    "Build AI that solves real Indian problems — a multilingual tutor, voice-based civic assistant, farmer advisor or college information bot.",
+
+    "The future isn't just AI that can talk.",
+
+    "It's AI that understands India. 🇮🇳",
+
+    "💡 AI CLUB OIST",
+
+    "Explore. Build. Innovate.",
+
+  ],
+},
+
+  {
   slug: "google-gemini-3-8-live-voice-ai-update",
   title: "🚨 AI UPDATE: Google Just Made a Big Move in Voice AI!",
   date: "2026-09-23",
