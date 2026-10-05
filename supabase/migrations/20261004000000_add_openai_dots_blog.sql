@@ -1,0 +1,87 @@
+-- ====================================================================
+-- AI CLUB OIST — MIGRATION: ADD OPENAI DOTS BLOG POST
+-- Article: 🤖 OpenAI Introduces Dots: Always-On AI Agents
+-- ====================================================================
+
+INSERT INTO blogs (
+  slug,
+  title,
+  excerpt,
+  author,
+  tags,
+  cover_image,
+  published_at,
+  content,
+  status
+)
+VALUES (
+  'openai-introduces-dots-always-on-ai-agents',
+  '🤖 OpenAI Introduces Dots: Always-On AI Agents',
+  'OpenAI has unveiled “dots” — always-on AI agents powered by GPT-6 Astra with their own cloud computer and browser, designed to take on ongoing work and make progress between conversations.',
+  'AI Club, OIST',
+  ARRAY['AI', 'OpenAI', 'AI Agents', 'Autonomous Agents'],
+  '/blog/ai-blog-cover.png',
+  '2026-10-04 00:00:00+00',
+  '[
+    "🤖 OpenAI Introduces Dots: Always-On AI Agents",
+    "OpenAI announced “dots,” always-on AI agents designed to take on ongoing work and keep making progress between conversations.",
+    "Dots are powered by GPT-6 Astra, have their own cloud computer and browser, can connect to apps, and can work toward user goals over time.",
+    "⚡ 1. What Makes Dots Different?",
+    "• Persistent work: A dot can take on an ongoing project instead of requiring the user to restart from scratch in every conversation.",
+    "• Cloud computer: Each dot has its own cloud computer and browser where it can carry out work.",
+    "• Connected apps: OpenAI says dots can connect through its plugin ecosystem to more than 4,000 apps.",
+    "• Learning from feedback: Dots can learn user preferences, goals, standards, and what good work looks like over time.",
+    "• Multiple tasks: A dot can work on several projects while the user continues to give it new tasks and ideas.",
+    "🛠️ 2. Real-World Examples from OpenAI",
+    "• Software development: Monitor customer feedback, identify recurring requests, work on smaller fixes, build and test them, and prepare pull requests for review.",
+    "• Product launches: Adapt launch materials when scope changes and prepare updated drafts.",
+    "• Research: Rerun analyses as new evidence arrives, investigate unexpected results, and update figures and explanations.",
+    "• Sales: Check requirements and account history, build a proof of concept, update proposals, and flag concerns.",
+    "• Content creation: Analyze interview transcripts, identify clip opportunities, prepare show notes, and draft social posts for approval.",
+    "🌐 3. Where Can You Use Dots?",
+    "• ChatGPT on desktop, web, and mobile",
+    "• Slack",
+    "• Microsoft Teams",
+    "Dots can also message users with progress updates, questions, or decisions that need human input.",
+    "OpenAI notes that direct texting support is coming soon.",
+    "🛡️ 4. Safety & Human Control",
+    "• Users choose which apps a dot can access.",
+    "• Custom Rules can allow specific actions, require approval, or block actions.",
+    "• Activity View lets users follow the dot’s progress, including background work.",
+    "• When proactive research runs in the background, its connected tools are restricted to read-only access.",
+    "• Auto-review checks consequential actions against instructions, Custom Rules, and safety requirements.",
+    "• Some sensitive actions, such as changing a password, always remain with the user.",
+    "OpenAI notes that dots can still make mistakes, so consequential work should always be reviewed.",
+    "🏢 5. Specialist Dots for Organizations",
+    "OpenAI is also previewing specialist dots for organizations. These can have their own identity, credentials, and access to company systems for well-defined responsibilities.",
+    "OpenAI says focused enterprise pilots are beginning, with responsibilities, tools, and human review defined with participating organizations.",
+    "OpenAI is also working with Microsoft to integrate specialist dots with enterprise governance and security controls in Microsoft Agent 365.",
+    "🎟️ 6. Availability & Limits",
+    "• Dots are rolling out to Pro and Business Premium users in eligible markets.",
+    "• Enterprise users, including Edu and Healthcare, can try the beta when their workspace administrator enables it.",
+    "• The first dot is included with Pro and Business Premium at no extra cost.",
+    "• Conversations with a dot do not count toward ChatGPT usage limits.",
+    "• Tasks that a dot starts or manages in Codex or ChatGPT Work count toward the relevant usage limits.",
+    "• Dots can be created initially from the ChatGPT desktop app or desktop browser; after setup, they can also be messaged from the mobile app.",
+    "🚀 7. Why This Matters for AI",
+    "The important shift is from AI as a tool you repeatedly prompt to AI as an ongoing collaborator that can take responsibility for a goal.",
+    "Instead of asking an AI to complete one isolated task, users can give a dot a broader objective, connect the tools it needs, and review the work as it progresses.",
+    "This points toward a future where AI agents can handle longer-running workflows while humans focus on decisions, direction, and approval.",
+    "📖 Source",
+    "OpenAI — “Introducing dots” (Published: September 29, 2026)",
+    "Official article: https://openai.com/index/introducing-dots/",
+    "💡 AI CLUB OIST",
+    "Explore. Build. Innovate."
+  ]'::jsonb,
+  'published'
+)
+ON CONFLICT (slug) DO UPDATE
+SET
+  title = EXCLUDED.title,
+  excerpt = EXCLUDED.excerpt,
+  content = EXCLUDED.content,
+  cover_image = EXCLUDED.cover_image,
+  tags = EXCLUDED.tags,
+  author = EXCLUDED.author,
+  published_at = EXCLUDED.published_at,
+  updated_at = NOW();
